@@ -7,18 +7,39 @@ mixin buttonText(name)
     .buttonText= name
 
 mixin addChampagne(champagne)
-    a(href="/detail.html") 
-        img(src=`./../assets/products/${champagne.img}` alt="champagne")
-    a.name(href="/detail.html")= champagne.name
-    .price 
-        span.originPrice
-            span= champagne.originPrice
-            sup đ
-        span &nbsp;&nbsp;
-        span.salePrice
-            span= champagne.salePrice
-            sup đ
-    +buttonText("ADD TO CART")
+    .champagne-card
+        a(href="/detail.html") 
+            img(src=`./../assets/products/${champagne.img}` alt="champagne")
+        a.name(href="/detail.html")= champagne.name
+        .price 
+            span.originPrice
+                span= champagne.originPrice
+                sup đ
+            span &nbsp;&nbsp;
+            span.salePrice
+                span= champagne.salePrice
+                sup đ
+        +buttonText("ADD TO CART")
+
+mixin addListViewChampagne(champagne)
+    .row.listViewCard
+        .col-12.col-lg-3
+            img(src=`./../assets/products/${champagne.img}` alt="champagne")
+        .col-12.col-lg-9.mx-2.mx-md-0
+            .name= champagne.name
+            .price 
+                span
+                    span= champagne.price
+                    sup đ
+            .description= champagne.description
+            .action-product
+                +buttonText("ADD TO CART")
+                .action-child
+                    i.fa.fa-heart 
+                    span Yêu thích
+                .action-child
+                    i.fa.fa-compress 
+                    span So sánh
 
 mixin productSlider(products)
     .product-slider.container-fluid
@@ -57,3 +78,16 @@ mixin dotPagi(totalPage, currentPage)
         while i < totalPage
             i.fa.fa-circle(class={active : i === currentPage - 1})
             - i++
+
+mixin breadcrumb 
+    nav(aria-label='breadcrumb')
+        ol.breadcrumb
+            li.breadcrumb-item
+                a(href='/') Trang chủ
+            li.breadcrumb-item
+                a(href='#') Sản phẩm
+            li.breadcrumb-item.active(aria-current='page') Rượu vang đỏ
+
+mixin titleWithArrow(name)
+    .title= name 
+    img(src="./../../assets/images/titleleft-dark.png" alt="")

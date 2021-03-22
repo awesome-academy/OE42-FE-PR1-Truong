@@ -1,0 +1,44 @@
+extend layout
+
+block title
+    title Danh sách
+
+block content
+    include ./../partials/header
+    main#list
+        +breadcrumb
+        .container-fluid 
+            .row 
+                .left.col-12.col-md-3
+                    +titleWithArrow("DANH MỤC SẢN PHẨM")
+                    ul
+                        for wineGroup in redWineData
+                            li.wine-group= wineGroup.title
+                            ul
+                            for wine in wineGroup.data 
+                                li.wine-name
+                                    if wine.active
+                                        i.fa.fa-circle
+                                    a(href="/list.html" class={active : wine.active})= wine.name + " (" + wine.qty + ")" 
+                    +titleWithArrow("SO SÁNH SẢN PHẨM")
+                    .compare Bạn chưa có sản phẩm nào để so sánh
+                    +titleWithArrow("TAG SẢN PHẨM")
+                    .tag-container
+                        for tag in tags
+                            .tag(class={active : tag.active})
+                                span= tag.name
+                    .img 
+                        img(src="./../assets/images/8bd367294fd54ff78565e6a73329e848.jpg" alt="")
+                .right.col-12.col-md-9
+                    .action
+                        block displayType
+                        .pagi 
+                            i.fa.fa-caret-left
+                            span 1
+                            span 2
+                            span 3
+                            span 4
+                            span 5
+                            i.fa.fa-caret-right
+                    block listProduct
+    include ./../partials/footer

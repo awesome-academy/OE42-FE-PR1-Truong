@@ -82,8 +82,12 @@ header
                 .item
                     font-size: 0.9rem
                     cursor: pointer
-                    &:hover
-                        color: orange
+                    a
+                        text-decoration: none
+                        &:link, &:visited
+                            color: grey
+                        &:hover, &:active
+                            color: orange
 
 main#homepage
     .introduction
