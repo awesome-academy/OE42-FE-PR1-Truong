@@ -1,0 +1,43 @@
+footer 
+    .container-fluid
+        .label.row.my-3
+            for label in labels 
+                .item.col-12.col-sm-4
+                    img(src=`./../assets/images/${label.img}` alt=label.name)
+        .row 
+            .col-12.col-md-5
+                .row 
+                    for list in footerList 
+                        .col-6
+                            .title= list.name
+                            for item in list.list
+                                .item= item
+            .col-12.col-md-7
+                .row 
+                    .send-email.col-12.col-lg-6
+                        .title GỬI EMAIL
+                        .description Gửi email cho chúng tôi để được hỗ trợ
+                        .input
+                            input(type="text" placeholder="Enter your email")
+                            .button GỬI
+                        .icons 
+                            for icon in footerIcons 
+                                i.fa(class=`fa-${icon.icon}`)
+                    .col-12.col-lg-6
+                        .title LIÊN HỆ
+                        .contact-item
+                            i.fa.fa-map-marker
+                            span Tầng 4, Tòa nhà Hà Nội Group, số 442 Đội Cấn, P.Cổng Vị, Q.Ba Đình, Hà Nội
+                        .contact-item 
+                            i.fa.fa-phone 
+                            span (04) 66776677
+                        .contact-item 
+                            i.fa.fa-envelope 
+                            span support@bizweb.com
+        .copyright.row
+            .col-12.col-md-6.p-0
+                i.fa.fa-copyright
+                span &nbsp;Copyright 2008-2015 DKT Technology JSC
+            .banking.col-12.col-md-6.p-0
+                i.fa.fa-cc-visa
+                i.fa.fa-cc-paypal

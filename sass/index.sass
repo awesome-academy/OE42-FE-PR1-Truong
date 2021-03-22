@@ -1,0 +1,284 @@
+@import "styles/vars"
+@import "styles/common"
+
+header
+    @include background-func("./../assets/images/slide-1.jpg")
+    section.top-header
+        background-color: rgba(#777777, 0.3)
+        display: flex
+        justify-content: space-between
+        .menu
+            display: flex
+            color: lightgrey
+            a
+                &:link, &:visited
+                    color: lightgrey
+                    text-decoration: none
+                &:hover, &:active
+                    color: orange
+                    text-decoration: underline
+            .top-menu-dropdown
+                @extend %top-menu-dropdown
+        .search-bar
+            input
+                color: white
+                background-color: transparent
+                border: none
+                border-left: 1px solid lightgrey
+                padding-left: 1rem
+                &::placeholder
+                    color: lightgrey
+                    font-style: italic
+                &:focus
+                    outline: none
+            i.fa
+                color: lightgrey
+                cursor: pointer
+    section.title
+        padding: 6rem 0
+        img
+            width: 50%
+            display: block
+            margin: auto
+    section.bottom-header
+        background-color: black
+        .logo
+            img
+                width: 6rem
+                display: block
+                margin: auto
+        i.fa-bars
+            float: right
+            color: lightgrey
+            margin: 1rem 0
+        .bottom-menu-dropdown
+            width: 99%
+            top: 1rem!important
+        .menu
+            display: flex
+            justify-content: flex-end
+            button
+                font-size: 1.2rem
+                padding: 2rem 1rem
+                background-color: transparent
+                color: lightgrey
+                border: none
+                &:hover
+                    color: orange
+                &[class~="active"]
+                    color: orange
+            .dropdown-menu
+                width: 40rem
+                left: -5rem!important
+                padding: 2rem
+                border: 1px solid orange
+                @media screen and ( $lg )
+                    width: 50rem
+                img
+                    width: 100%
+                .title
+                    letter-spacing: 0.2rem
+                    margin-bottom: 0.5rem
+                .item
+                    font-size: 0.9rem
+                    cursor: pointer
+                    &:hover
+                        color: orange
+
+main#homepage
+    .introduction
+        .content
+            text-align: center
+            padding: 5rem 2rem
+            margin: auto
+            background-image: none
+            background-repeat: no-repeat
+            background-size: auto
+            @media screen and ( $sm )
+                padding: 5rem 5rem
+            @media screen and ( $md )
+                padding: 5rem 10rem
+            @media screen and ( $lg )
+                background-image: url("./../assets/images/product.jpg")
+                padding: 5rem 20rem
+            @media screen and ( $xl )
+                padding: 5rem 25rem
+            @media screen and ( $xxl )
+                padding: 5rem 30rem
+            .title-container
+                margin: 0
+                .title
+                    @extend %title
+                p
+                    letter-spacing: 0.1rem
+            img
+                margin: 1rem 0
+            .buttonText
+                margin: auto
+                margin-top: 2rem
+    .bg-grapes
+        width: 100%
+        img
+            width: 100%
+            height: auto
+            margin: auto
+            display: block
+            @media screen and ( $lg )
+                width: 60rem
+                height: 40rem
+    .main-product
+        width: 100%
+        margin: auto
+        margin-top: -20rem
+        @media screen and ( $lg )
+            width: 50rem
+        .img
+            padding-top: 2rem
+            background-color: white
+            img
+                width: 50%
+                display: block
+                margin: auto
+        .detail
+            box-sizing: border-box
+            padding-top: 2rem
+            padding-right: 5rem
+            background-color: white
+            .title
+                font-size: 1.4rem
+                letter-spacing: 0.1rem
+            .price
+                margin: 1rem 0
+                color: orange
+                font-size: 1.8rem
+            .description
+                color: grey
+            .data
+                display: grid
+                grid-template-columns: 1fr 1fr
+                grid-template-rows: 7rem 7rem
+                grid-gap: 1px 1px
+                border: 1px solid orange
+                background-color: orange
+                & > div
+                    background-color: white
+                    color: orange
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    font-size: 2rem
+                    text-align: center
+    .carousel
+        @extend %responsiveContainer
+        .carousel-item
+            .item
+                text-align: center
+                img
+                    width: 100%
+                a.name
+                    text-decoration: none
+                    font-weight: bold
+                    &:link, &:visited
+                        color: grey
+                    &:hover, &:active
+                        color: orange
+                .price
+                    font-size: 1.1rem
+                    margin: 1rem 0
+                    .originPrice
+                        color: orange
+                    .salePrice
+                        color: grey
+                        text-decoration: line-through
+                .buttonText
+                    font-size: 0.8rem
+                    margin: auto
+    .product-slider
+        @extend %responsiveContainer
+        .product-bound
+            flex-wrap: nowrap
+            overflow: hidden
+            position: relative
+            .disabled
+                color: grey
+                cursor: default
+            .prevBtn
+                @extend  %arrowBtn
+                left: 0
+            .nextBtn
+                @extend  %arrowBtn
+                right: 0
+            .item
+                text-align: center
+                img
+                    width: 100%
+                .name
+                    font-weight: bold
+                .price
+                    font-size: 1.1rem
+                    margin: 1rem 0
+                    .originPrice
+                        color: orange
+                    .salePrice
+                        color: grey
+                        text-decoration: line-through
+                .buttonText
+                    font-size: 0.8rem
+                    margin: auto
+    .images
+        padding: 4rem 2rem
+        box-sizing: border-box
+        @include fit-image(100%)
+    .bottom-content
+        @extend %responsiveContainer
+        .news
+            margin-bottom: 1rem
+            @include fit-image(60%)
+            .title
+                letter-spacing: 0.1rem
+                margin: 0.5rem 0
+            .description
+                font-size: 0.8rem
+                color: grey
+                margin-bottom: 0.5rem
+            .content
+            .more
+                @extend %readMore
+        .customer
+            text-align: center
+            .icon
+                background-color: orange
+                color: white
+                width: 3rem
+                height: 3rem
+                border-radius: 3rem
+                text-align: center
+                line-height: 3rem
+                margin: auto
+            .text
+                text-align: center
+                margin-top: 1rem
+            .readmore
+                @extend %readMore
+                text-align: center
+            .thumb-img
+                padding: 1rem 0
+                img
+                    width: 5rem
+                    height: 5rem
+                    border-radius: 0.5rem
+                    object-fit: cover
+                    display: block
+                    margin: auto
+            .name
+                font-weight: bold
+            .job
+                font-size: 0.8rem
+                font-style: italic
+            .pagi
+                font-size: 0.6rem
+                margin: 1rem 0
+                .fa
+                    margin: 0 0.2rem
+                    &[class~="active"]
+                        color: orange

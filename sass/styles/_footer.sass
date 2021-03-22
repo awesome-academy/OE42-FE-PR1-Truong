@@ -1,0 +1,62 @@
+@import "vars"
+@import "common"
+
+footer
+    @extend %responsiveContainer
+    .label
+        .item
+            padding: 2rem 2rem
+            border-bottom: 1px solid lightgrey
+            border-right: 1px solid lightgrey
+            &:last-of-type
+                border-right: none
+            img
+                width: 100%
+                margin: auto
+    .title
+        letter-spacing: 0.2rem
+        margin: 0.5rem 0
+    .item
+        font-size: 0.8rem
+    .description
+        margin: 0.2rem 0
+        font-size: 0.8rem
+    .input
+        display: flex
+        width: 100%
+        input
+            width: 80%
+            padding: 0 0.5rem
+            &::placeholder
+                color: lightgrey
+                font-style: italic
+        .button
+            width: 20%
+            cursor: pointer
+            background-color: black
+            color: white
+            padding: 0.1rem 0
+            text-align: center
+    .icons
+        margin: 0.5rem 0
+        color: grey
+        i.fa
+            margin-right: 0.5rem
+    .contact-item
+        i.fa
+            margin-right: 0.3rem
+        span
+            font-size: 0.8rem
+    .copyright
+        display: flex
+        justify-content: space-between
+        border-top: 1px solid lightgrey
+        border-bottom: 1px solid lightgrey
+        margin: 1rem 0
+        padding: 0.5rem 0
+        .banking
+            display: flex
+            justify-content: flex-end
+            font-size: 1.5rem
+            i.fa
+                margin-left: 0.5rem
