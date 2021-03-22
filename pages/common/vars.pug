@@ -1,0 +1,97 @@
+-
+    const menues = [
+        { name: "Tài khoản của tôi", link: "/my-account" },
+        { name: "Trạng thái đơn hàng", link: "/order-status" },
+        { name: "Danh sách ưa thích ", link: "/favorite-list" },
+        { name: "Giỏ hàng", link: "/cart" },
+        { name: "Đăng nhập", link: "/login" },
+        { name: "Đăng ký", link: "/register" }
+    ]
+    const bottomMenues = [
+        { name: "TRANG CHỦ", link: "/", active: false },
+        { name: "RƯỢU VANG ĐỎ", link: "/red-wine", active: true },
+        { name: "RƯỢU TRẮNG", link: "/white-wine", active: false },
+        { name: "CHAMPAGNE", link: "/champagne", active: false },
+        { name: "THÔNG TIN", link: "/information", active: false },
+        { name: "BLOG", link: "/blog", active: false },
+        { name: "LIÊN HỆ", link: "/contact", active: false }
+    ]
+    const redWineData = [
+        { title: "RƯỢU NGOẠI", data: ["Rượu Chivas", "Rượu độc đáo", "Johnnie Walker", "Rượu Whiskey", "Rượu Remy Martin", "Rượu Glenmorangie"] },
+        { title: "RƯỢU VANG", data: ["Rượu Chivas", "Rượu độc đáo", "Johnnie Walker", "Rượu Whiskey", "Rượu Remy Martin", "Rượu Glenmorangie"] },
+        { title: "RƯỢU NGOẠI", data: ["Rượu Chivas", "Rượu độc đáo", "Johnnie Walker", "Rượu Whiskey", "Rượu Remy Martin", "Rượu Glenmorangie"] }
+    ]
+    const champagnes = [
+        { name: "RƯỢU VANG HUẾ", img: "1.jpg", originPrice: "400.000", salePrice: "350.000" },
+        { name: "RƯỢU VANG ĐÀ LẠT", img: "2.jpg", originPrice: "450.000", salePrice: "300.000" },
+        { name: "RƯỢU VANG HẢI PHÒNG", img: "3.jpg", originPrice: "300.000", salePrice: "250.000" },
+        { name: "RƯỢU VANG HÀ TĨNH", img: "4.jpg", originPrice: "200.000", salePrice: "150.000" },
+        { name: "RƯỢU VANG HUẾ", img: "5.jpg", originPrice: "400.000", salePrice: "350.000" },
+        { name: "RƯỢU VANG ĐÀ LẠT", img: "6.jpg", originPrice: "450.000", salePrice: "300.000" },
+        { name: "RƯỢU VANG HẢI PHÒNG", img: "7.jpg", originPrice: "300.000", salePrice: "250.000" },
+        { name: "RƯỢU VANG HÀ TĨNH", img: "8.jpg", originPrice: "200.000", salePrice: "150.000" },
+        { name: "RƯỢU VANG HUẾ", img: "9.jpg", originPrice: "400.000", salePrice: "350.000" },
+        { name: "RƯỢU VANG ĐÀ LẠT", img: "10.jpg", originPrice: "450.000", salePrice: "300.000" },
+        { name: "RƯỢU VANG HẢI PHÒNG", img: "11.jpg", originPrice: "300.000", salePrice: "250.000" },
+        { name: "RƯỢU VANG HÀ TĨNH", img: "12.jpg", originPrice: "200.000", salePrice: "150.000" }
+    ]
+    const images = [
+        { name: "47bb1d096966d29c98926a156318c767.jpg", alt: "champagne wine" },
+        { name: "Depositphotos_3010981_original1.jpg", alt: "champagne wine" },
+        { name: "Depositphotos_6971969_original-1240x698.jpg", alt: "champagne wine" },
+        { name: "8bd367294fd54ff78565e6a73329e848.jpg", alt: "champagne wine" },
+        { name: "Depositphotos_3010981_original1.jpg", alt: "champagne wine" },
+        { name: "47bb1d096966d29c98926a156318c767.jpg", alt: "champagne wine" },
+        { name: "8bd367294fd54ff78565e6a73329e848.jpg", alt: "champagne wine" },
+        { name: "Depositphotos_6971969_original-1240x698.jpg", alt: "champagne wine" }
+    ]
+    const newses = [
+        { 
+            title: "VÀNG THĂNG LONG CLASSIC",
+            postedBy: "Google",
+            postedDate: "30/6/2015",
+            commentQty: 60,
+            img: "Depositphotos_3010981_original1.jpg",
+            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ..."
+        },
+        { 
+            title: "VÀNG THĂNG LONG CLASSIC",
+            postedBy: "Google",
+            postedDate: "30/6/2015",
+            commentQty: 60,
+            img: "Depositphotos_6971969_original-1240x698.jpg",
+            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ..."
+        }
+    ]
+    const productImgs = [
+        { img: "1.jpg", name: "img1", alt: "wine champagne", active: true },
+        { img: "2.jpg", name: "img2", alt: "wine champagne", active: false },
+        { img: "3.jpg", name: "img3", alt: "wine champagne", active: false },
+        { img: "4.jpg", name: "img4", alt: "wine champagne", active: false },
+        { img: "5.jpg", name: "img5", alt: "wine champagne", active: false }
+        ]
+    const colors = [
+        { name: "orange", active: true },
+        { name: "black", active: false },
+        { name: "red", active: false }
+    ]
+    const footerList = [
+        { name: "THÔNG TIN", list: ["VỀ CHÚNG TÔI", "GIAO HÀNG", "CẢM NGHĨ", "LƯU TRỮ", "CHÍNH SÁCH RIÊNG TƯ"] },
+        { name: "MUA HÀNG", list: ["VẬN CHUYỂN VÀ TRẢ HÀNG", "MUA HÀNG AN TOÀN", "VẬN QUỐC TẾ", "LIÊN KẾT", "DỊCH VỤ GIẢM GIÁ"] }
+    ]
+    const footerIcons = [
+        { name: "Twitter", icon: "twitter" },
+        { name: "Google++", icon: "google-plus" },
+        { name: "LinkedIn", icon: "linkedin" },
+        { name: "Facebook", icon: "facebook" }
+    ]
+    const labels = [
+        { name: "fello", img: "partner13.png" },
+        { name: "cole", img: "partner14.png" },
+        { name: "temona", img: "partner17.png" }
+    ]
+    const productDescriptions = [
+        { name: "ĐẶC ĐIỂM NỔI BẬT", key: "highlight", info: "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang  mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé." },
+        { name: "THÔNG TIN SẢN PHẨM", key: "information", info: "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại  ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng." },
+        { name: "ĐÁNH GIÁ", key: "review", info: "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng.  Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên." }
+    ]

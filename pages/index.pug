@@ -1,0 +1,115 @@
+extend layout.pug
+
+block title
+    title Trang chủ
+
+block content
+    header 
+        section.top-header.py-2
+            .menu.px-0.px-md-5
+                .d-none.d-md-flex
+                    for menu, index in menues 
+                        a(href=menu.link)= menu.name
+                        if index !== menues.length - 1
+                            div.mx-2 -
+                .d-block.d-md-none 
+                    i.fa.fa-bars.mx-3(
+                        id="topMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    )
+                    .dropdown-menu.top-menu-dropdown(aria-labelledby='topMenuButton')
+                        for menu in menues
+                            a.dropdown-item(href=menu.link)= menu.name
+            .search-bar.px-0.px-md-5.mx-3.mx-md-0
+                input(type="text" placeholder="Tìm kiếm ở đây ...")
+                i.fa.fa-search
+        section.title 
+            img(src="./../assets/images/text.png" alt="")
+        section.bottom-header 
+            .container 
+                .row 
+                    .logo.col-2.d-none.d-lg-block
+                        img(src="./../assets/images/my-logo.png" alt="")
+                    .dropdown.menu.col-12.col-lg-10.d-none.d-md-flex
+                        .dropdown-menu(aria-labelledby="dropdownMenuButton")
+                            .row 
+                                .col-12.col-lg-8
+                                    .row
+                                        for wine in redWineData
+                                            .col-4 
+                                                .title= wine.title
+                                                for item in wine.data
+                                                    .item= item
+                                .col-12.col-md-4.d-none.d-lg-block
+                                    img(src="./../assets/images/Depositphotos_3010981_original1.jpg" alt="")
+                        for menu in bottomMenues
+                            if menu.active
+                                button#dropdownMenuButton.active(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")= menu.name
+                            else
+                                button= menu.name
+                    .d-block.d-md-none 
+                        i.fa.fa-bars(
+                            id="bottomMenuButton"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        )
+                        .dropdown-menu.dropdown-menu-right.bottom-menu-dropdown(aria-labelledby='bottomMenuButton')
+                            for menu in bottomMenues
+                                a.dropdown-item(href=menu.link)= menu.name
+    main#homepage
+        .introduction
+            .content
+                +title("GIỚI THIỆU")
+                p Vestibulum orci dui, condimentum et sapien ut, lobortis ullamcorper turpis. In vitae sapien vel lectus tincidunt gravida. Aenean scelerisque est ac lorem auctor, non bibendum orci commodo. Nam a iaculis orci, eu pellentesque neque. Phasellus dui sapien, feugiat dictum nulla nec, iaculis fringilla est. Proin feugiat, erat at rutrum pretium, nunc nibh hendrerit risus, in mollis nisi ante non erat. Nam gravida nisl et lacus aliquet, sit amet suscipit erat auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut vehicula laoreet feugiat. Ut ut sollicitudin quam, sed lacinia urna. Nullam scelerisque et erat eget condimentum.
+                +buttonText("XEM THÊM")
+        .bg-grapes
+            img(src="./../assets/images/grapes.jpg" alt="green grapes")
+        .main-product.container-fluid 
+            .row
+                .col-12.col-sm-6.img
+                    img(src="./../assets/images/df3218bb45274009c6c3d5de8a6b98bf.jpg" alt="alpatago champagne")
+                .col-12.col-sm-6.detail 
+                    .title RƯỢU NHO NĂM 1987
+                    img(src="./../assets/images/titleleft-dark.png" alt="")
+                    .price 
+                        span 330.000
+                        sup đ
+                    +buttonText("ADD TO CART")
+                    p.description Một hợp chất có trong rượu vang được gọi là Resveratro còn có khả năng ngăn chặn mật độ ôxy hóa cùa protein béo.
+                    .data
+                        div 334<br>ngày
+                        div 26<br>giờ
+                        div 60<br>phút
+                        div 15<br>giây
+        +title("SẢN PHẨM MỚI")
+        +slider(champagnes)
+        .images.container-fluid
+            .row 
+                for img in images
+                    .img.col-6.col-md-3.p-0
+                        img(src=`./../assets/images/${img.name}` alt=img.alt)
+        +title("SẢN PHẨM BÁN CHẠY")
+        +slider(champagnes)
+        .bottom-content.container-fluid 
+            .row 
+                .col-12.col-md-8
+                    +title("TIN TỨC & BLOG")
+                    .row
+                        for news in newses 
+                            .news.col-12.col-sm-6
+                                +addNews(news)
+                .customer.col-12.col-md-4
+                    +title("KHÁCH HÀNG")
+                    .icon
+                        i.fa.fa-quote-right
+                    .text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ...
+                    .readmore Read more 
+                    .thumb-img 
+                        img(src="./../assets/images/timthumb2.jpg" alt="")
+                    .name GIANG LT
+                    .job Graphic design 
+                    +dotPagi(3, 1)
+    include partials/footer

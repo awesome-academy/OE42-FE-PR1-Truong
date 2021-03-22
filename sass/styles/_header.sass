@@ -1,0 +1,87 @@
+@import "vars"
+@import "common"
+    
+header.common-header
+    @include background-func("./../assets/images/slide-1.jpg")
+    section.top-header
+        background-color: white
+        display: flex
+        justify-content: space-between
+        .menu
+            display: flex
+            color: black
+            a
+                &:link, &:visited
+                    color: black
+                    text-decoration: none
+                &:hover, &:active
+                    color: orange
+                    text-decoration: underline
+            .top-menu-dropdown
+                @extend %top-menu-dropdown
+        .search-bar
+            input
+                color: black
+                background-color: transparent
+                border: none
+                border-left: 1px solid black
+                padding-left: 1rem
+                &::placeholder
+                    color: black
+                    font-style: italic
+                &:focus
+                    outline: none
+            i.fa
+                color: black
+                cursor: pointer
+    section.title
+        padding: 6rem 0
+        img
+            width: 50%
+            display: block
+            margin: auto
+    section.bottom-header
+        background-color: black
+        .logo
+            img
+                width: 6rem
+                display: block
+                margin: auto
+        i.fa-bars
+            float: right
+            color: white
+            margin: 1rem 0
+        .bottom-menu-dropdown
+            transform: none!important
+            width: 100%
+            top: 5.4rem!important
+        .menu
+            display: flex
+            justify-content: flex-end
+            button
+                font-size: 1.2rem
+                padding: 2rem 1rem
+                background-color: transparent
+                color: lightgrey
+                border: none
+                &:hover
+                    color: orange
+                &[class~="active"]
+                    color: orange
+            .dropdown-menu
+                width: 40rem
+                left: -5rem!important
+                padding: 2rem
+                border: 1px solid orange
+                @media screen and ( $lg )
+                    width: 50rem
+                img
+                    width: 100%
+                .title
+                    letter-spacing: 0.2rem
+                    margin-bottom: 0.5rem
+                .item
+                    font-size: 0.9rem
+                    cursor: pointer
+                    &:hover
+                        color: orange

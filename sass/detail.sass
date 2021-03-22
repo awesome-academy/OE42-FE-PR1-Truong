@@ -1,0 +1,167 @@
+@import "styles/vars"
+@import "styles/common"
+
+main#detail
+    @extend %responsiveContainer
+    .breadcrumb
+        margin: 2rem 0
+        .breadcrumb-item
+            a
+                text-decoration: none
+                &:link, &:visited
+                    color: grey
+                &:hover, &:active
+                    color: orange
+            &[class~="active"]
+                color: orange
+    .image-container
+        border: 1px solid lightgrey
+        .image-list
+            border-right: 1px solid lightgrey
+            padding: 0 0.2rem
+            .item
+                width: 100%
+                height: 5rem
+                padding: 0.5rem 0
+                input
+                    display: none
+                    &:checked + label.label-photo
+                        border: 1px solid orange
+                &:first-of-type
+                    height: 2rem
+                    text-align: center
+                &:last-of-type
+                    height: 2rem
+                    text-align: center
+                    display: flex
+                    align-items: flex-end
+                img
+                    width: 100%
+                    height: 100%
+                    padding: 0
+        .photo
+            display: flex
+            justify-content: center
+            align-items: center
+            img
+                width: 100%
+    .info-container
+        .title
+            font-size: 1.2rem
+            letter-spacing: 0.1rem
+        .price
+            font-size: 2rem
+            margin: 0.2rem 0
+            color: orange
+        .rate
+            padding: 0.2rem 0
+            color: grey
+            border-top: 1px solid lightgrey
+            border-bottom: 1px solid lightgrey
+        .label
+            margin: 1rem 0 0.5rem 0
+            color: grey
+        .color
+            display: flex
+            input
+                display: none
+                &:checked + label.label-color
+                    border: 1px solid lightgrey
+            .color-orange
+                @extend %color-div
+                &::before
+                    background-color: orange
+            .color-black
+                @extend %color-div
+                &::before
+                    background-color: black
+            .color-red
+                @extend %color-div
+                &::before
+                    background-color: red
+        select
+            color: grey
+            border-color: lightgrey
+            padding: 0.1rem 0.2rem
+            min-width: 7rem
+            option
+                &::before
+                    content: ""
+                    display: inline-block
+                    padding: 0.1rem 0.2rem
+        .number-qty
+            display: flex
+            .icon
+                display: flex
+                justify-content: center
+                align-items: center
+                padding: 0 0.5rem
+                background-color: lightgrey
+            .number
+                input
+                    outline: none
+                    border: 1px solid lightgrey
+                    width: 5rem
+                    text-align: center
+                    &:focus
+                        border: 1px solid grey
+            .button-text
+                @extend %button-text
+                padding: 0.1rem 0.8rem
+                margin-left: 1rem
+        .action
+            margin: 1rem 0
+            span
+                margin-right: 1rem
+        p
+            color: grey
+            margin: 0.5rem 0
+        .network
+            display: flex
+            .facebook
+                @extend %social-network
+                background-color: #3b5998
+            .twitter
+                @extend %social-network
+                background-color: #1DA1F2
+            .google
+                @extend %social-network
+                background-color: red
+            .linkedin
+                @extend %social-network
+                background-color: #2867B2
+    .info
+        .tab
+            .nav-link
+                color: grey
+                &[class~="active"]
+                    background-color: orange
+                    color: white
+        .img
+            img
+                width: 100%
+    .carousel
+        margin-bottom: 3rem
+        .carousel-item
+            .item
+                text-align: center
+                img
+                    width: 100%
+                a.name
+                    text-decoration: none
+                    font-weight: bold
+                    &:link, &:visited
+                        color: grey
+                    &:hover, &:active
+                        color: orange
+                .price
+                    font-size: 1.1rem
+                    margin: 1rem 0
+                    .originPrice
+                        color: orange
+                    .salePrice
+                        color: grey
+                        text-decoration: line-through
+                .buttonText
+                    font-size: 0.8rem
+                    margin: auto

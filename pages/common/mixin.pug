@@ -1,0 +1,59 @@
+mixin title(name)
+    .title-container
+        .title= name
+        img(src="./../assets/images/title-dark.png" alt="")
+
+mixin buttonText(name)
+    .buttonText= name
+
+mixin addChampagne(champagne)
+    a(href="/detail.html") 
+        img(src=`./../assets/products/${champagne.img}` alt="champagne")
+    a.name(href="/detail.html")= champagne.name
+    .price 
+        span.originPrice
+            span= champagne.originPrice
+            sup đ
+        span &nbsp;&nbsp;
+        span.salePrice
+            span= champagne.salePrice
+            sup đ
+    +buttonText("ADD TO CART")
+
+mixin productSlider(products)
+    .product-slider.container-fluid
+        .product-bound.row
+            .prevBtn
+                i.fa.fa-arrow-left
+            .nextBtn.disabled
+                i.fa.fa-arrow-right
+            for product in products 
+                .item.col-6.col-sm-3
+                    +addChampagne(product)
+
+mixin slider(items)
+    #carouselExampleControls.carousel.slide(data-ride='carousel')
+    #newsProductCarousel.carousel.slide(data-ride="carousel")
+        .carousel-inner.container-fluid
+            for el, ind in Array(items.length/4)
+                .carousel-item(class={active : ind === 0})
+                    .container-fluid
+                        .row 
+                            for el2, ind2 in Array(4)
+                                .item.col-6.col-sm-3
+                                    +addChampagne(items[ind * 4 + ind2])
+
+mixin addNews(news)
+    .img
+        img(src=`./../assets/images/${news.img}` alt="")
+    .title= news.title 
+    .description= "Đăng bởi " + news.postedBy + " | " + news.postedDate + " | " + news.commentQty + " bình luận"
+    p.content= news.content
+    .more Read more
+
+mixin dotPagi(totalPage, currentPage)
+    - let i = 0
+    .pagi 
+        while i < totalPage
+            i.fa.fa-circle(class={active : i === currentPage - 1})
+            - i++
