@@ -1,0 +1,18 @@
+extend layouts/list-layout
+
+block displayType 
+    .display-type
+        input#table-type(type="radio" name="display-type" checked)
+        label(for="table-type")
+            a(href="/list-table.html") 
+                i.fa.fa-th
+        input#list-type(type="radio" name="display-type")
+        label(for="list-type")
+            a(href="/list-list.html") 
+                i.fa.fa-list
+
+block listProduct
+    .list.row
+        for product in listProducts
+            .col-4.item
+                +addChampagne(product)

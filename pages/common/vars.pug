@@ -17,9 +17,27 @@
         { name: "LIÊN HỆ", link: "/contact", active: false }
     ]
     const redWineData = [
-        { title: "RƯỢU NGOẠI", data: ["Rượu Chivas", "Rượu độc đáo", "Johnnie Walker", "Rượu Whiskey", "Rượu Remy Martin", "Rượu Glenmorangie"] },
-        { title: "RƯỢU VANG", data: ["Rượu Chivas", "Rượu độc đáo", "Johnnie Walker", "Rượu Whiskey", "Rượu Remy Martin", "Rượu Glenmorangie"] },
-        { title: "RƯỢU NGOẠI", data: ["Rượu Chivas", "Rượu độc đáo", "Johnnie Walker", "Rượu Whiskey", "Rượu Remy Martin", "Rượu Glenmorangie"] }
+        { title: "RƯỢU NGOẠI", data: [
+            { name: "Rượu Chivas", qty: 22, active: false },
+            { name: "Johnnie Walker", qty: 12, active: true },
+            { name: "Rượu Whiskey", qty: 272, active: false },
+            { name: "Rượu Remy Martin", qty: 22, active: false },
+            { name: "Rượu Glenmorangie", qty: 82, active: false }
+        ] },
+        { title: "RƯỢU VANG", data: [
+            { name: "Rượu Chivas", qty: 22, active: false },
+            { name: "Johnnie Walker", qty: 22, active: false },
+            { name: "Rượu Whiskey", qty: 22, active: false },
+            { name: "Rượu Remy Martin", qty: 22, active: false },
+            { name: "Rượu Glenmorangie", qty: 22, active: false }
+        ] },
+        { title: "RƯỢU TRẤNG", data: [
+            { name: "Rượu Chivas", qty: 22, active: false },
+            { name: "Johnnie Walker", qty: 22, active: false },
+            { name: "Rượu Whiskey", qty: 22, active: false },
+            { name: "Rượu Remy Martin", qty: 22, active: false },
+            { name: "Rượu Glenmorangie", qty: 22, active: false }
+        ] }
     ]
     const champagnes = [
         { name: "RƯỢU VANG HUẾ", img: "1.jpg", originPrice: "400.000", salePrice: "350.000" },
@@ -94,4 +112,32 @@
         { name: "ĐẶC ĐIỂM NỔI BẬT", key: "highlight", info: "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang  mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé." },
         { name: "THÔNG TIN SẢN PHẨM", key: "information", info: "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại  ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng." },
         { name: "ĐÁNH GIÁ", key: "review", info: "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng.  Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên." }
+    ]
+    const tags = [
+        { name: "Đồng hồ", active: true },
+        { name: "Túi", active: false },
+        { name: "Phụ kiện", active: false },
+        { name: "Giày", active: false },
+        { name: "Sandal", active: false },
+        { name: "Áo sơ mi", active: false },
+        { name: "Nước hoa", active: false },
+        { name: "Trẻ em", active: false },
+        { name: "Thời trang nữ", active: false }
+    ]
+    const listProducts = [
+        { img: "1.jpg", name: "RƯỢU VANG ĐÀ LẠT", originPrice: "300.000", salePrice: "250.000" },
+        { img: "2.jpg", name: "RƯỢU VANG ĐÀ LẠT", originPrice: "300.000", salePrice: "250.000" },
+        { img: "3.jpg", name: "RƯỢU VANG ĐÀ LẠT", originPrice: "300.000", salePrice: "250.000" },
+        { img: "4.jpg", name: "RƯỢU VANG ĐÀ LẠT", originPrice: "300.000", salePrice: "250.000" },
+        { img: "5.jpg", name: "RƯỢU VANG ĐÀ LẠT", originPrice: "300.000", salePrice: "250.000" },
+        { img: "6.jpg", name: "RƯỢU VANG ĐÀ LẠT", originPrice: "300.000", salePrice: "250.000" },
+        { img: "7.jpg", name: "RƯỢU VANG ĐÀ LẠT", originPrice: "300.000", salePrice: "250.000" },
+        { img: "8.jpg", name: "RƯỢU VANG ĐÀ LẠT", originPrice: "300.000", salePrice: "250.000" },
+        { img: "9.jpg", name: "RƯỢU VANG ĐÀ LẠT", originPrice: "300.000", salePrice: "250.000" }
+    ]
+    const listListProducts = [
+        { img: "9.jpg", name: "RƯỢU NHO NĂM 1987", price: "300.000", description: "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha." },
+        { img: "10.jpg", name: "RƯỢU NHO NĂM 1987", price: "300.000", description: "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha." },
+        { img: "11.jpg", name: "RƯỢU NHO NĂM 1987", price: "300.000", description: "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha." },
+        { img: "12.jpg", name: "RƯỢU NHO NĂM 1987", price: "300.000", description: "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha." },
     ]

@@ -1,4 +1,4 @@
-extend layout.pug
+extend layouts/layout
 
 block title
     title Trang chủ
@@ -41,7 +41,8 @@ block content
                                             .col-4 
                                                 .title= wine.title
                                                 for item in wine.data
-                                                    .item= item
+                                                    .item
+                                                        a(href="/list-table.html")= item
                                 .col-12.col-md-4.d-none.d-lg-block
                                     img(src="./../assets/images/Depositphotos_3010981_original1.jpg" alt="")
                         for menu in bottomMenues

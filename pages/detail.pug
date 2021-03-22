@@ -1,4 +1,4 @@
-extend layout.pug
+extend layouts/layout
 
 block title
     title Chi tiết
@@ -7,13 +7,7 @@ block content
     include partials/header
     main#detail
         .container-fluid
-            nav(aria-label='breadcrumb')
-                ol.breadcrumb
-                    li.breadcrumb-item
-                        a(href='/') Trang chủ
-                    li.breadcrumb-item
-                        a(href='#') Sản phẩm
-                    li.breadcrumb-item.active(aria-current='page') Rượu vang đỏ
+            +breadcrumb
             .row.mb-5
                 .image-container.col-12.col-lg-6
                     .row.h-100
