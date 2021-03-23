@@ -1,0 +1,33 @@
+extend layouts/layout
+
+block title
+    title Chi tiết
+
+block content
+    include partials/header
+    main#cart.px-2.p-md-0
+        +breadcrumb("Giỏ hàng")
+        +titleWithArrow("GIỎ HÀNG")
+        .table-responsive
+            table.table.table-bordered
+                thead 
+                    tr 
+                        for hd in cartTableHeaders
+                            th(scope="col")= hd.name
+                        th(scope="col") Xóa
+                tbody 
+                    for item in cartData 
+                        tr 
+                            for hd in cartTableHeaders
+                                if hd.key === "img"
+                                    td
+                                        img(src=`./../assets/products/${item.img}` alt="wine")
+                                else
+                                    td= item[hd.key]
+                            td
+                                i.fa.fa-trash
+        .cart-action.d-block.d-sm-flex
+            +buttonText("TIẾP TỤC MUA HÀNG")
+            +buttonText("XÓA")
+            +buttonText("CẬP NHẬT")
+    include partials/footer
