@@ -12,8 +12,8 @@
         { name: "RƯỢU VANG ĐỎ", link: "/red-wine", active: true },
         { name: "RƯỢU TRẮNG", link: "/white-wine", active: false },
         { name: "CHAMPAGNE", link: "/champagne", active: false },
-        { name: "THÔNG TIN", link: "/information", active: false },
-        { name: "BLOG", link: "/blog", active: false },
+        { name: "THÔNG TIN", link: "/introduction.html", active: false },
+        { name: "BLOG", link: "/blog.html", active: false },
         { name: "LIÊN HỆ", link: "/contact", active: false }
     ]
     const redWineData = [
@@ -94,8 +94,20 @@
         { name: "red", active: false }
     ]
     const footerList = [
-        { name: "THÔNG TIN", list: ["VỀ CHÚNG TÔI", "GIAO HÀNG", "CẢM NGHĨ", "LƯU TRỮ", "CHÍNH SÁCH RIÊNG TƯ"] },
-        { name: "MUA HÀNG", list: ["VẬN CHUYỂN VÀ TRẢ HÀNG", "MUA HÀNG AN TOÀN", "VẬN QUỐC TẾ", "LIÊN KẾT", "DỊCH VỤ GIẢM GIÁ"] }
+        { name: "THÔNG TIN", list: [
+            { name: "VỀ CHÚNG TÔI", link: "/introduction.html"},
+            { name: "GIAO HÀNG", link: "/" },
+            { name: "CẢM NGHĨ", link: "/" },
+            { name: "LƯU TRỮ", link: "/" },
+            { name: "CHÍNH SÁCH RIÊNG TƯ", link: "/" }
+        ] },
+        { name: "MUA HÀNG", list: [
+            { name: "VẬN CHUYỂN VÀ TRẢ HÀNG", link: "/" },
+            { name: "MUA HÀNG AN TOÀN", link: "/" },
+            { name: "VẬN QUỐC TẾ", link: "/" },
+            { name: "LIÊN KẾT", link: "/" },
+            { name: "DỊCH VỤ GIẢM GIÁ", link: "/" }
+        ] }
     ]
     const footerIcons = [
         { name: "Twitter", icon: "twitter" },
@@ -153,4 +165,78 @@
         { name: "HUMBUGER ĐỎ", img: "2.jpg", price: "345.000", quantity: 2, total: "690.000" },
         { name: "RƯỢU TRẮNG", img: "3.jpg", price: "345.000", quantity: 2, total: "690.000" },
         { name: "RƯỢU VANG ĐỎ", img: "4.jpg", price: "345.000", quantity: 2, total: "690.000" }
+    ]
+    const blogs = [
+        {
+            title: "VANG THĂNG LONG CLASSIC",
+            img: "Depositphotos_6971969_original-1240x698.jpg",
+            postedBy: "Google",
+            postedDate: "30-6-2016",
+            commentQty: 60,
+            content: "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…"
+        },
+        {
+            title: "VANG THĂNG LONG CLASSIC",
+            img: "Depositphotos_3010981_original1.jpg",
+            postedBy: "Google",
+            postedDate: "30-6-2016",
+            commentQty: 60,
+            content: "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…"
+        },
+        {
+            title: "VANG THĂNG LONG CLASSIC",
+            img: "grapes.jpg",
+            postedBy: "Google",
+            postedDate: "30-6-2016",
+            commentQty: 60,
+            content: "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…"
+        },
+        {
+            title: "VANG THĂNG LONG CLASSIC",
+            img: "Depositphotos_6971969_original-1240x698.jpg",
+            postedBy: "Google",
+            postedDate: "30-6-2016",
+            commentQty: 60,
+            content: "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…"
+        },
+        {
+            title: "VANG THĂNG LONG CLASSIC",
+            img: "Depositphotos_3010981_original1.jpg",
+            postedBy: "Google",
+            postedDate: "30-6-2016",
+            commentQty: 60,
+            content: "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…"
+        },
+        {
+            title: "VANG THĂNG LONG CLASSIC",
+            img: "grapes.jpg",
+            postedBy: "Google",
+            postedDate: "30-6-2016",
+            commentQty: 60,
+            content: "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…"
+        },
+        {
+            title: "VANG THĂNG LONG CLASSIC",
+            img: "Depositphotos_6971969_original-1240x698.jpg",
+            postedBy: "Google",
+            postedDate: "30-6-2016",
+            commentQty: 60,
+            content: "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…"
+        },
+        {
+            title: "VANG THĂNG LONG CLASSIC",
+            img: "Depositphotos_3010981_original1.jpg",
+            postedBy: "Google",
+            postedDate: "30-6-2016",
+            commentQty: 60,
+            content: "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…"
+        },
+        {
+            title: "VANG THĂNG LONG CLASSIC",
+            img: "grapes.jpg",
+            postedBy: "Google",
+            postedDate: "30-6-2016",
+            commentQty: 60,
+            content: "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…"
+        }
     ]

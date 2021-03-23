@@ -41,7 +41,8 @@ header.common-header
                         if menu.active
                             button#dropdownMenuButton.active(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")= menu.name
                         else
-                            button= menu.name
+                            button
+                                a(href=menu.link)= menu.name
                 .d-block.d-md-none 
                     i.fa.fa-bars(
                         id="bottomMenuButton"

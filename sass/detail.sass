@@ -136,13 +136,9 @@ main#detail
                 text-align: center
                 img
                     width: 100%
+                @include link-style(grey, orange)
                 a.name
-                    text-decoration: none
                     font-weight: bold
-                    &:link, &:visited
-                        color: grey
-                    &:hover, &:active
-                        color: orange
                 .price
                     font-size: 1.1rem
                     margin: 1rem 0

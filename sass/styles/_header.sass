@@ -64,6 +64,7 @@ header.common-header
                 background-color: transparent
                 color: lightgrey
                 border: none
+                @include link-style(white, orange)
                 &:hover
                     color: orange
                 &[class~="active"]
@@ -83,9 +84,4 @@ header.common-header
                 .item
                     font-size: 0.9rem
                     cursor: pointer
-                    a
-                        text-decoration: none
-                        &:link, &:visited
-                            color: grey
-                        &:hover, &:active
-                            color: orange
+                    @include link-style(grey, orange)
