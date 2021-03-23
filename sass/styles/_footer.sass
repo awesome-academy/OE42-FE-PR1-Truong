@@ -18,12 +18,7 @@ footer
         margin: 0.5rem 0
     .item
         font-size: 0.8rem
-        a
-            text-decoration: none
-            &:link, &:visited
-                color: grey
-            &:hover, &:active
-                color: orange
+        @include link-style(grey, orange)
     .description
         margin: 0.2rem 0
         font-size: 0.8rem

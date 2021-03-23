@@ -24,9 +24,11 @@ mixin addChampagne(champagne)
 mixin addListViewChampagne(champagne)
     .row.listViewCard
         .col-12.col-lg-3
-            img(src=`./../assets/products/${champagne.img}` alt="champagne")
+            a(href="/detail.html")
+                img(src=`./../assets/products/${champagne.img}` alt="champagne")
         .col-12.col-lg-9.mx-2.mx-md-0
-            .name= champagne.name
+            .name
+                a(href="/detail.html")= champagne.name
             .price 
                 span
                     span= champagne.price
@@ -64,12 +66,16 @@ mixin slider(items)
                                 .item.col-6.col-sm-3
                                     +addChampagne(items[ind * 4 + ind2])
 
-mixin addNews(news)
+mixin addBlog(blog)
     .img
-        img(src=`./../assets/images/${news.img}` alt="")
-    .title= news.title 
-    .description= "Đăng bởi " + news.postedBy + " | " + news.postedDate + " | " + news.commentQty + " bình luận"
-    p.content= news.content
+        a(href="/blog-detail.html") 
+            img(src=`./../assets/images/${blog.img}` alt="")
+            .icon 
+                i.fa.fa-link
+    .title
+        a(href="/blog-detail.html")= blog.title
+    .description= "Đăng bởi " + blog.postedBy + " | " + blog.postedDate + " | " + blog.commentQty + " bình luận"
+    p.content= blog.content
     .more Read more
 
 mixin dotPagi(totalPage, currentPage)
