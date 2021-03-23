@@ -1,0 +1,50 @@
+extend layouts/layout
+
+block title
+    title Chi tiết Blog
+
+block content
+    include partials/header
+    main#blog-detail.px-2.p-md-0
+        +breadcrumb(["Trang chủ", "Blog"])
+        +titleWithArrow("BLOG")
+        .container-fluid.p-0.my-5
+            .row
+                .sub.col-12.col-md-4
+                    .title BÀI VIẾT MỚI NHẤT
+                    for news in newestPosts
+                        +postNews(news)
+                    .title BLOG TAGS
+                    +blogTags(tags)
+                    .title LATEST VIDEO
+                    video(controls)
+                        source(src="./../assets/videos/mov_bbb.mp4" type="video/mp4") 
+                .main.col-12.col-md-8
+                    .img 
+                        img(src="./../assets/images/grapes.jpg" alt="")
+                    .title VANG THĂNG LONG CLASSIC
+                    .description Đăng bỏi Giangle | 30/6/2015 | 60 bình luận
+                    p.blog-content Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng.  Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.
+                    form
+                        .header ĐÓNG GÓP Ý KIẾN
+                        +formInput("Tên")
+                        +formInput("Email")
+                        +formInput("Ý kiến", true)
+                        .row
+                            .col-12.offset-md-2.col-md-10
+                                button(type="submit") GỬI Ý KIẾN
+                    .comment-container 
+                        .comment-header= "BÌNH LUẬN(" + comments.length + ")"
+                        for comment in comments
+                            .comment-item 
+                                .item-header
+                                    .author= `Bình luận bởi ${comment.author} | Cách đây ${comment.sinceHour} giờ`
+                                    a(href="").reply Trả lời
+                                p.item-content= comment.content
+                        .comment-pagination 
+                            .prev &lt;
+                            .page.active 1
+                            .page 2
+                            .page 3
+                            .next &gt;
+    include partials/footer

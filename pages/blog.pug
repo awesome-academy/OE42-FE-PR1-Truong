@@ -1,0 +1,16 @@
+extend layouts/layout
+
+block title
+    title Blog
+
+block content
+    include partials/header
+    main#blog.px-2.p-md-0
+        +breadcrumb(["Trang chủ", "Blog"])
+        +titleWithArrow("BLOG")
+        .container-fluid.p-0.my-5
+            .row
+                for blog in blogs
+                    .col-12.col-md-4.blog-card
+                        +addBlog(blog)
+    include partials/footer
