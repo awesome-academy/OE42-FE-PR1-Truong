@@ -1,0 +1,28 @@
+@import "styles/vars"
+@import "styles/common"
+
+main#cart
+    @extend %responsiveContainer
+    .table
+        margin-top: 1rem
+        thead
+            th
+                text-align: center
+                font-weight: normal
+                text-transform: uppercase
+        tbody
+            td
+                text-align: center
+                vertical-align: middle
+                img
+                    width: 5rem
+    .cart-action
+        .buttonText
+            margin-top: 0.5rem
+            margin-left: auto
+        @media screen and ( $sm )
+            display: flex
+            justify-content: flex-end
+            .buttonText
+                margin-top: 0
+                margin-left: 1rem
