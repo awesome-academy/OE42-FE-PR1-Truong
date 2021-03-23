@@ -79,14 +79,15 @@ mixin dotPagi(totalPage, currentPage)
             i.fa.fa-circle(class={active : i === currentPage - 1})
             - i++
 
-mixin breadcrumb(name = "Rượu vang đỏ")
+mixin breadcrumb(arr)
     nav(aria-label='breadcrumb')
         ol.breadcrumb
-            li.breadcrumb-item
-                a(href='/') Trang chủ
-            li.breadcrumb-item
-                a(href='#') Sản phẩm
-            li.breadcrumb-item.active(aria-current='page')= name
+            for item, index in arr
+                if index === arr.length - 1
+                    li.breadcrumb-item.active(aria-current='page')= item
+                else 
+                    li.breadcrumb-item
+                        a(href='#')= item
 
 mixin titleWithArrow(name)
     .title= name 

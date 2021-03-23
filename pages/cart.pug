@@ -1,12 +1,12 @@
 extend layouts/layout
 
 block title
-    title Chi tiết
+    title Giỏ hàng
 
 block content
     include partials/header
     main#cart.px-2.p-md-0
-        +breadcrumb("Giỏ hàng")
+        +breadcrumb(["Trang chủ", "Sản phẩm", "Giỏ hàng"])
         +titleWithArrow("GIỎ HÀNG")
         .table-responsive
             table.table.table-bordered
