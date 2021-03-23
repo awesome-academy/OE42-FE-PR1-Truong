@@ -6,7 +6,7 @@ block title
 block content
     include ./../partials/header
     main#list
-        +breadcrumb
+        +breadcrumb(["Trang chủ", "Sản phẩm", "Rượu vang đỏ"])
         .container-fluid 
             .row 
                 .left.col-12.col-md-3
@@ -23,10 +23,7 @@ block content
                     +titleWithArrow("SO SÁNH SẢN PHẨM")
                     .compare Bạn chưa có sản phẩm nào để so sánh
                     +titleWithArrow("TAG SẢN PHẨM")
-                    .tag-container
-                        for tag in tags
-                            .tag(class={active : tag.active})
-                                span= tag.name
+                    +blogTags(tags)
                     .img 
                         img(src="./../assets/images/8bd367294fd54ff78565e6a73329e848.jpg" alt="")
                 .right.col-12.col-md-9

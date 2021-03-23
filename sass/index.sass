@@ -58,6 +58,7 @@ header
             display: flex
             justify-content: flex-end
             button
+                @include link-style(white, orange)
                 font-size: 1.2rem
                 padding: 2rem 1rem
                 background-color: transparent
@@ -82,12 +83,7 @@ header
                 .item
                     font-size: 0.9rem
                     cursor: pointer
-                    a
-                        text-decoration: none
-                        &:link, &:visited
-                            color: grey
-                        &:hover, &:active
-                            color: orange
+                    @include link-style(grey, orange)
 
 main#homepage
     .introduction
@@ -179,13 +175,9 @@ main#homepage
                 text-align: center
                 img
                     width: 100%
+                @include link-style(grey, orange)
                 a.name
-                    text-decoration: none
                     font-weight: bold
-                    &:link, &:visited
-                        color: grey
-                    &:hover, &:active
-                        color: orange
                 .price
                     font-size: 1.1rem
                     margin: 1rem 0
@@ -235,19 +227,6 @@ main#homepage
         @include fit-image(100%)
     .bottom-content
         @extend %responsiveContainer
-        .news
-            margin-bottom: 1rem
-            @include fit-image(60%)
-            .title
-                letter-spacing: 0.1rem
-                margin: 0.5rem 0
-            .description
-                font-size: 0.8rem
-                color: grey
-                margin-bottom: 0.5rem
-            .content
-            .more
-                @extend %readMore
         .customer
             text-align: center
             .icon

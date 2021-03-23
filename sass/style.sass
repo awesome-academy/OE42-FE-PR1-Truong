@@ -3,6 +3,31 @@
 @import "styles/vars"
 @import "styles/common"
 
+// Spacing
+.pl-0
+    padding-left: 0!important
+
+.pr-0
+    padding-right: 0!important
+
+.pt-0
+    padding-top: 0!important
+
+.pb-0
+    padding-bottom: 0!important
+
+.ml-0
+    margin-left: 0!important
+
+.mr-0
+    margin-right: 0!important
+
+.mt-0
+    margin-top: 0!important
+
+.mb-0
+    margin-bottom: 0!important
+
 .buttonText
     @extend %button-text
 
@@ -49,3 +74,52 @@
     .buttonText
         font-size: 0.8rem
         margin: auto
+
+.blog-card
+    margin-bottom: 1rem
+    @include fit-image(60%)
+    .img
+        .icon
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            transition-duration: 0.3s
+            background-color: rgba(0, 0, 0, 0)
+            color: white
+            i.fa
+                visibility: hidden
+                font-size: 0
+                transition-duration: 0.3s
+            &:hover
+                cursor: pointer
+                background-color: rgba(0, 0, 0, 0.5)
+                i.fa
+                    visibility: visible
+                    font-size: 1.5rem
+    .title
+        letter-spacing: 0.1rem
+        margin: 0.5rem 0
+        @include link-style(black, orange)
+    .description
+        font-size: 0.8rem
+        color: grey
+        margin-bottom: 0.5rem
+    .content
+    .more
+        @extend %readMore
+    
+.tag-container
+            display: flex
+            flex-wrap: wrap
+            .tag
+                border: 1px solid lightgrey
+                padding: 0.2rem 0.5rem
+                margin: 0 0.5rem 0.8rem 0
+                &[class~="active"]
+                    background-color: orange
+                    color: white

@@ -24,9 +24,11 @@ mixin addChampagne(champagne)
 mixin addListViewChampagne(champagne)
     .row.listViewCard
         .col-12.col-lg-3
-            img(src=`./../assets/products/${champagne.img}` alt="champagne")
+            a(href="/detail.html")
+                img(src=`./../assets/products/${champagne.img}` alt="champagne")
         .col-12.col-lg-9.mx-2.mx-md-0
-            .name= champagne.name
+            .name
+                a(href="/detail.html")= champagne.name
             .price 
                 span
                     span= champagne.price
@@ -64,12 +66,16 @@ mixin slider(items)
                                 .item.col-6.col-sm-3
                                     +addChampagne(items[ind * 4 + ind2])
 
-mixin addNews(news)
+mixin addBlog(blog)
     .img
-        img(src=`./../assets/images/${news.img}` alt="")
-    .title= news.title 
-    .description= "Đăng bởi " + news.postedBy + " | " + news.postedDate + " | " + news.commentQty + " bình luận"
-    p.content= news.content
+        a(href="/blog-detail.html") 
+            img(src=`./../assets/images/${blog.img}` alt="")
+            .icon 
+                i.fa.fa-link
+    .title
+        a(href="/blog-detail.html")= blog.title
+    .description= "Đăng bởi " + blog.postedBy + " | " + blog.postedDate + " | " + blog.commentQty + " bình luận"
+    p.content= blog.content
     .more Read more
 
 mixin dotPagi(totalPage, currentPage)
@@ -79,15 +85,45 @@ mixin dotPagi(totalPage, currentPage)
             i.fa.fa-circle(class={active : i === currentPage - 1})
             - i++
 
-mixin breadcrumb(name = "Rượu vang đỏ")
+mixin breadcrumb(arr)
     nav(aria-label='breadcrumb')
         ol.breadcrumb
-            li.breadcrumb-item
-                a(href='/') Trang chủ
-            li.breadcrumb-item
-                a(href='#') Sản phẩm
-            li.breadcrumb-item.active(aria-current='page')= name
+            for item, index in arr
+                if index === arr.length - 1
+                    li.breadcrumb-item.active(aria-current='page')= item
+                else 
+                    li.breadcrumb-item
+                        a(href='#')= item
 
 mixin titleWithArrow(name)
     .title= name 
     img(src="./../../assets/images/titleleft-dark.png" alt="")
+
+mixin postNews(news)
+    .post.row 
+        .img.col-4
+            a(href="")
+                img(src=`./../../assets/images/${news.img}` alt="")
+        .content.col-8 
+            .title
+                a(href="")= news.name
+            .date
+                i.fa.fa-calendar-o
+                span= " " + news.date
+
+mixin blogTags(tags)
+    .tag-container
+        for tag in tags
+            .tag(class={active : tag.active})
+                span= tag.name
+
+mixin formInput(name, isTextarea = false)
+    .form-item.row
+        .form-title.col-12.col-md-2
+            span= name
+            span *
+        .form-input.col-12.col-md-10
+            if isTextarea
+                textarea(rows="10")
+            else
+                input(type="text")

@@ -11,7 +11,8 @@ footer
                         .col-6
                             .title= list.name
                             for item in list.list
-                                .item= item
+                                .item
+                                    a(href=item.link)= item.name
             .col-12.col-md-7
                 .row 
                     .send-email.col-12.col-lg-6
