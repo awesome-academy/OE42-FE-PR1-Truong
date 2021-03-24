@@ -1,0 +1,31 @@
+extend layouts/layout
+
+block title
+    title Đăng ký
+
+block content
+    include partials/header
+    main#register.px-2.p-md-0
+        +breadcrumb(["Trang chủ", "Đăng ký"])
+        .login-top-header
+            div
+                +titleWithArrow("ĐĂNG KÝ")
+            a(href="/login.html")
+                +buttonText("ĐĂNG NHẬP")
+        form.login-form-container.container-fluid.my-5
+            .login-form-title THÔNG TIN CÁ NHÂN
+            +formInput("Tên trước", "text")
+            +formInput("Tên sau", "text")
+            +formInput("Email", "text")
+            .row 
+                .col-12.offset-md-2.col-md-10
+                    input(type="checkbox" id="get-news")
+                    label(for="get-news") Đăng ký nhận bản tin
+            .login-form-title THÔNG TIN ĐĂNG NHẬP
+            +formInput("Mật khẩu", "password")
+            +formInput("Xác nhận mật khẩu", "password")
+            .row 
+                .login-button.col-12.offset-md-2.col-md-10
+                    button(type="submit").smallButtonText GỬI
+                    button(type="button").smallButtonText QUAY LẠI
+    include partials/footer
