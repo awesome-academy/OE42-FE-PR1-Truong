@@ -1,0 +1,32 @@
+@import "styles/vars"
+@import "styles/common"
+
+main#address
+    @extend %responsiveContainer
+    .address-container
+        font-size: 0.8rem
+        .address-header
+            font-size: 1.2em
+            margin: 1em 0
+        @include link-style($light-blue, orange)
+        a.address-header
+            font-size: 1.2em
+            margin: 1em 0
+            display: inline-block
+            text-decoration: underline
+        .input-item
+            font-size: 1.2em
+        .button-group
+            display: flex
+            .buttonText
+                &:first-of-type
+                    margin-right: 1rem
+                    background-color: $light-blue
+        .text-item
+            font-size: 1.2em
+            margin: 0.5em -0.8em
+        .edit-address-link
+            text-align: right
+            a
+                font-size: 1.2em
+                text-decoration: underline

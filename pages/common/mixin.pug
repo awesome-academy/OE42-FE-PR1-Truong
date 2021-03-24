@@ -117,19 +117,28 @@ mixin blogTags(tags)
             .tag(class={active : tag.active})
                 span= tag.name
 
-mixin formInput(name, type)
+mixin formInput(name, type, value = "", titleBreakpoint = 2)
     .input-item.row
-        .input-title.col-12.col-md-2
-            span= name
-            span *
-        .input.col-12.col-md-10
-            case type 
-                when "text"
-                    input(type="text")
-                when "password"
-                    input(type="text")
-                when "textarea"
-                    textarea(rows="10")
+        if type === "checkbox"
+            .input.col-12(class=`col-md-${12 - titleBreakpoint} offset-md-${titleBreakpoint}`)
+                input(type="checkbox" checked=value.checked id=value.id)
+                label(for=value.id)= name
+        else
+            .input-title.col-12(class=`col-md-${titleBreakpoint}`)
+                span= name
+                span *
+            .input.col-12(class=`col-md-${12 - titleBreakpoint}`)
+                case type 
+                    when "text"
+                        input(type="text" value=value)
+                    when "password"
+                        input(type="text" value=value)
+                    when "textarea"
+                        textarea(rows="10")= value
+                    when "select"
+                        select
+                            for option in value.options
+                                option(value=option selected=value.value===option)= option
 
 mixin statusItem(status)
     case status 
