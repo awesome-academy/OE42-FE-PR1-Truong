@@ -130,4 +130,10 @@ mixin formInput(name, type)
                     input(type="text")
                 when "textarea"
                     textarea(rows="10")
-                
+
+mixin statusItem(status)
+    case status 
+        when "ALL"
+            .status-item= "Trạng thái tát cả (" + listOrders.length + ")"
+        default
+            .status-item= `${orderStatuses.find(stt => stt.key === status).name} (${listOrders.filter(order => order.status === status).length})`

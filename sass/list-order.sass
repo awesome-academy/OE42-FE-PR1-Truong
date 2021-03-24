@@ -1,0 +1,64 @@
+@import "styles/vars"
+@import "styles/common"
+
+main#list-order
+    @extend %responsiveContainer
+    margin-bottom: 5rem
+    .list-order-container
+        margin-top: 1rem
+        font-size: 0.8rem
+        .list-orders
+            padding: 0
+            @media screen and ( $lg )
+                padding-right: 1rem
+            .table-header
+                border: 1px solid lightgrey
+                border-bottom: none
+                padding: 1rem
+                background-color: $bg-light
+                .table-header-title
+                    font-size: 1.2em
+                    letter-spacing: 0.2em
+                .order-status-proview
+                    display: flex
+                    flex-wrap: wrap
+                    .status-item
+                        margin-top: 0.5em
+                        width: fit-content
+                    .space
+                        margin: 0.5em 0.5em 0 0.5em
+            .table
+                margin: 0
+                @include link-style(black, orange)
+                tr
+                    &:last-of-type
+                        border-bottom: 1px solid lightgrey
+                    th, td
+                        font-weight: normal
+                        text-align: center
+                        vertical-align: middle
+                        border-bottom: none
+                        border-right: 1px solid lightgrey
+                        &:first-of-type
+                            border-left: 1px solid lightgrey
+                    th
+                        border-top: 1px solid lightgrey
+                        border-bottom: 1px solid lightgrey
+                    .code-and-date
+                        text-align: left
+                    .hour
+                        color: grey
+                        text-align: left
+                        font-size: 0.8em
+        .customer-info
+            padding-right: 0
+            padding: 1em
+            background-color: $bg-light
+            border: 1px solid lightgrey
+            .customer-title
+            .customer-item
+                display: flex
+                .icon
+                    margin-right: 0.5em
+                .content
+                    word-break: break-word

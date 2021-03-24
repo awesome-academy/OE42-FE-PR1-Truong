@@ -1,7 +1,7 @@
 -
     const menues = [
         { name: "Tài khoản của tôi", link: "/my-account" },
-        { name: "Trạng thái đơn hàng", link: "/order-status" },
+        { name: "Trạng thái đơn hàng", link: "/list-order.html" },
         { name: "Danh sách ưa thích ", link: "/favorite-list" },
         { name: "Giỏ hàng", link: "/cart.html" },
         { name: "Đăng nhập", link: "/login.html" },
@@ -249,4 +249,28 @@
         { author: "Giangle", sinceHour: 4, content: "Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang." },
         { author: "TuanNguyen", sinceHour: 7, content: "Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang." },
         { author: "Giangle", sinceHour: 4, content: "Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang." }
+    ]
+    const orderStatuses = [
+        { key: "CANCELLED", name: "Đã hủy" },
+        { key: "NOT_APPLY", name: "Chưa duyệt" },
+        { key: "APPLIED", name: "Đã duyệt" },
+        { key: "PAID", name: "Đã thanh toán" },
+        { key: "BOUGHT", name: "Đã mua hàng" },
+        { key: "WAIT_DELIVER", name: "Chờ giao hàng" },
+        { key: "FINISHED", name: "Đã kết thúc" }
+    ]
+    const listOrders = [
+        { billCode: "LEANHGIANG89", buyDate: "17/6/2015", buyHour: "13:56", deliveredPos: "HÀ ĐÔNG", productQty: 7, total: "350.000", status: "CANCELLED" },
+        { billCode: "LEANHGIANG89", buyDate: "17/6/2015", buyHour: "13:56", deliveredPos: "HÀ ĐÔNG", productQty: 7, total: "350.000", status: "WAIT_DELIVER" },
+        { billCode: "LEANHGIANG89", buyDate: "17/6/2015", buyHour: "13:56", deliveredPos: "HÀ ĐÔNG", productQty: 7, total: "350.000", status: "PAID" },
+        { billCode: "LEANHGIANG89", buyDate: "17/6/2015", buyHour: "13:56", deliveredPos: "HÀ ĐÔNG", productQty: 7, total: "350.000", status: "FINISHED" }
+    ]
+    const orderColData = [
+        { name: "STT", key: "index" },
+        { name: "MÃ HÓA ĐƠN/NGÀY MUA HÀNG", key: "code_and_date_order" },
+        { name: "KHO NHẬN HÀNG", key: "deliveredPos" },
+        { name: "SỐ SP", key: "productQty" },
+        { name: "TỔNG TIỀN", key: "total" },
+        { name: "TÌNH TRẠNG", key: "status" },
+        { name: "THAO TÁC", key: "action" }
     ]
