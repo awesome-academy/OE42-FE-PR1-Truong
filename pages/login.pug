@@ -1,0 +1,27 @@
+extend layouts/layout
+
+block title
+    title Đăng nhập
+
+block content
+    include partials/header
+    main#login.px-2.p-md-0
+        +breadcrumb(["Trang chủ", "Đăng nhập"])
+        .login-top-header
+            div
+                +titleWithArrow("ĐĂNG NHẬP")
+            a(href="/register.html")
+                +buttonText("ĐĂNG KÝ")
+        form.login-form-container.container-fluid.my-5
+            .login-form-title KHÁCH HÀNG ĐĂNG NHẬP
+            .login-form-guide Nếu bạn có một tài khoản, xin vui lòng đăng nhập.
+            +formInput("Email", "text")
+            +formInput("Password", "password")
+            .row 
+                .col-12.offset-md-2.col-md-10
+                    input(type="checkbox" id="forgot-password")
+                    label(for="forgot-password") Quên mật khẩu
+            .row 
+                .login-button.col-12.offset-md-2.col-md-10
+                    button(type="submit").buttonText ĐĂNG NHẬP
+    include partials/footer
