@@ -27,9 +27,9 @@ block content
                     p.blog-content Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng.  Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.
                     form
                         .header ĐÓNG GÓP Ý KIẾN
-                        +formInput("Tên")
-                        +formInput("Email")
-                        +formInput("Ý kiến", true)
+                        +formInput("Tên", "text")
+                        +formInput("Email", "text")
+                        +formInput("Ý kiến", "textarea")
                         .row
                             .col-12.offset-md-2.col-md-10
                                 button(type="submit") GỬI Ý KIẾN

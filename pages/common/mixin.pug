@@ -117,13 +117,17 @@ mixin blogTags(tags)
             .tag(class={active : tag.active})
                 span= tag.name
 
-mixin formInput(name, isTextarea = false)
-    .form-item.row
-        .form-title.col-12.col-md-2
+mixin formInput(name, type)
+    .input-item.row
+        .input-title.col-12.col-md-2
             span= name
             span *
-        .form-input.col-12.col-md-10
-            if isTextarea
-                textarea(rows="10")
-            else
-                input(type="text")
+        .input.col-12.col-md-10
+            case type 
+                when "text"
+                    input(type="text")
+                when "password"
+                    input(type="text")
+                when "textarea"
+                    textarea(rows="10")
+                

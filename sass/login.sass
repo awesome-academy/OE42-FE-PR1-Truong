@@ -1,0 +1,25 @@
+@import "styles/vars"
+@import "styles/common"
+
+main#login
+    @extend %responsiveContainer
+    .login-top-header
+        display: flex
+        justify-content: space-between
+        a
+            text-decoration: none
+        .buttonText
+            height: fit-content
+    form.login-form-container
+        padding: 2rem
+        border: 1px solid lightgrey
+        .login-form-title
+            font-size: 1.2rem
+            letter-spacing: 0.2rem
+        .login-form-guide
+            margin: 1rem 0
+        .login-button
+            margin-top: 1rem
+            button[type="submit"]
+                border: none
+    
