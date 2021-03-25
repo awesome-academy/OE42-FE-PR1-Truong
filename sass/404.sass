@@ -1,0 +1,87 @@
+@import "styles/vars"
+@import "styles/common"
+    
+main#not-found
+    .error-container
+        font-size: 0.4rem
+        @media screen and ( $md )
+            font-size: 0.7rem
+        @media screen and ( $lg )
+            font-size: 1rem
+        background-color: orange
+        color: white
+        height: 15em
+        margin-top: 12em
+        .bound-content
+            display: flex
+            justify-content: flex-end
+            position: relative
+            margin: auto
+            width: 57em
+            .img
+                position: absolute
+                top: -6em
+                left: -6em
+                img
+                    width: 20em
+            .main-title
+                font-size: 23em
+                font-weight: bold
+                margin-top: -0.5em
+            .error-title
+                font-family: 'Dancing Script', cursive
+                position: absolute
+                top: -0.2em
+                left: 1em
+                font-size: 8em
+                color: black
+            .text
+                position: absolute
+                top: 3em
+                right: 13em
+                color: black
+                background-color: orange
+                padding-left: 2em
+                padding-right: 1em
+                .line-normal
+                    font-family: 'Raleway', sans-serif
+                    font-size: 2.3em
+                    margin-bottom: -0.5em
+                .line-special
+                    font-family: 'Lobster', cursive
+                    font-size: 2em
+    .error-action
+        display: flex
+        width: fit-content
+        margin: auto
+        margin-top: 3rem
+        .logo
+            img
+                width: 8rem
+        .link-container
+            display: flex
+            width: fit-content
+            .link
+                z-index: 100
+                display: flex
+                align-items: center
+                margin-right: 1.5rem
+                @include link-style(grey, orange)
+                a
+                    text-decoration: underline
+                    i.fa
+                        margin-left: 0.2rem
+        .search
+            display: flex
+            align-items: center
+            label
+                border: 1px solid lightgrey
+                border-right: none
+                padding: 1px 5px
+                color: grey
+            input
+                border: 1px solid lightgrey
+                border-left: none
+                color: grey
+                &:focus
+                    outline: none

@@ -1,0 +1,46 @@
+extend layouts/layout
+
+block title
+    title Lỗi 404
+
+block style
+    link(rel="stylesheet" href="./css/style.css")
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+        crossorigin="anonymous"
+    )
+    link(rel='preconnect' href='https://fonts.gstatic.com')
+    link(href='https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@100&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap' rel='stylesheet')
+
+block content
+    main#not-found
+        .error-container
+            .bound-content
+                .img 
+                    img(src="./../assets/images/wine.png" alt="wine")
+                .main-title 404
+                .error-title Lỗi
+                .text 
+                    .line-normal ĐÂY KHÔNG PHẢI LÀ
+                    .line-special trang web bạn đang tìm kiếm
+        .error-action.d-block.d-sm-flex
+            .logo.d-none.d-sm-block
+                img(src="./../assets/images/my-logo.png" alt="company")
+            .link-container.my-3.my-sm-0
+                .link 
+                    a(href="/")
+                        span TRANG CHỦ
+                        i.fa.fa-caret-right
+                .link 
+                    a(href="/")
+                        span LIÊN HỆ
+                        i.fa.fa-caret-right
+            .search 
+                label(for="search-input")
+                    i.fa.fa-search
+                input#search-input(type="text")
