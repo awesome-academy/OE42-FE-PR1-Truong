@@ -1,4 +1,26 @@
-footer 
+footer
+    #exampleModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+        .modal-dialog.modal-dialog-centered.modal-lg(role='document')
+            .modal-content
+                .modal-header
+                    button.close(type='button' data-dismiss='modal' aria-label='Close')
+                        i.fa.fa-times
+                .modal-body
+                    .modal-container 
+                        .container-fluid 
+                            .row 
+                                .img.col-3.d-none.d-sm-block
+                                    img(src="./../assets/images/4d4a67fe55cf4c8c032823b993944af7.jpg" alt="")
+                                .content.col-12.col-sm-9.px-0.px-sm-5
+                                    .content-container
+                                        .title GỬI EMAIL
+                                        p.tutorial Đăng ký email ngay hôm nay để nhận được thông tin về các sự kiện, các chương trình giảm giá của chúng tôi sớm nhất!
+                                        form
+                                            .form-item.mx-1.mx-sm-0
+                                                input(type="text" placeholder="Email của bạn...")
+                                                input(type="submit", value="GỬI EMAIL")
+                                            input#not-again.my-3(type="checkbox")
+                                            label.mx-1.my-3(for="not-again") Không hiển thị lại thông báo này
     .container-fluid
         .label.row.my-3
             for label in labels 
@@ -20,7 +42,7 @@ footer
                         .description Gửi email cho chúng tôi để được hỗ trợ
                         .input
                             input(type="text" placeholder="Enter your email")
-                            .button GỬI
+                            button.button(data-toggle="modal" data-target="#exampleModal") GỬI
                         .icons 
                             for icon in footerIcons 
                                 i.fa(class=`fa-${icon.icon}`)
