@@ -2,7 +2,11 @@
     const menues = [
         { name: "Tài khoản của tôi", link: "/my-account" },
         { name: "Trạng thái đơn hàng", link: "/list-order.html" },
+<<<<<<< HEAD
         { name: "Danh sách ưa thích ", link: "/favorite-list" },
+=======
+        { name: "Địa chỉ của tôi", link: "/address.html" },
+>>>>>>> Create address page
         { name: "Giỏ hàng", link: "/cart.html" },
         { name: "Đăng nhập", link: "/login.html" },
         { name: "Đăng ký", link: "/register.html" }
@@ -273,4 +277,48 @@
         { name: "TỔNG TIỀN", key: "total" },
         { name: "TÌNH TRẠNG", key: "status" },
         { name: "THAO TÁC", key: "action" }
+    ]
+    const addressData = [
+        { name: "Tên", value: "Giang", type: "text" },
+        { name: "Họ & tên đệm", value: "Lê Anh", type: "text" },
+        { name: "Công ty", value: "Cổ phần công nghệ DKT", type: "text" },
+        { name: "Địa chỉ", value: "Tòa nhà Hanoi Group, Đội Cẩn, Ba Đình, Hà Nội", type: "text" },
+        { name: "Thành phố", value: { value: "Hà Nội", options: ["Nha Trang", "Hà Nội", "Đà Nẵng", "Hồ Chí Minh"] }, type: "select" },
+        { name: "Quốc tịch", value: { value: "Việt Nam", options: ["Mỹ", "Trung Quốc", "Nhật Bản", "Việt Nam"] }, type: "select" },
+        { name: "Postal/Zip Code", value: "2300089", type: "text" },
+        { name: "Phone", value: "09812365126", type: "text" },
+        { name: "Đặt làm địa chỉ mặc định?", value: { checked: true, id: "default-address-1" }, type: "checkbox" }
+    ]
+    const addressDataAdd = [
+        { name: "Tên", value: "Giang", type: "text" },
+        { name: "Họ & tên đệm", value: "Lê Anh", type: "text" },
+        { name: "Công ty", value: "Cổ phần công nghệ DKT", type: "text" },
+        { name: "Địa chỉ", value: "Tòa nhà Hanoi Group, Đội Cẩn, Ba Đình, Hà Nội", type: "text" },
+        { name: "Thành phố", value: { value: "Hà Nội", options: ["Nha Trang", "Hà Nội", "Đà Nẵng", "Hồ Chí Minh"] }, type: "select" },
+        { name: "Quốc tịch", value: { value: "Việt Nam", options: ["Mỹ", "Trung Quốc", "Nhật Bản", "Việt Nam"] }, type: "select" },
+        { name: "Postal/Zip Code", value: "2300089", type: "text" },
+        { name: "Phone", value: "09812365126", type: "text" },
+        { name: "Đặt làm địa chỉ mặc định?", value: { checked: true, id: "default-address-2" }, type: "checkbox" }
+    ]
+    const addresses = [
+        [ 
+            { key: "Tên", value: "Giang" },
+            { key: "Họ & tên đệm", value: "Lê Anh" },
+            { key: "Công ty", value: "Cổ phần công nghệ DKT" },
+            { key: "Địa chỉ", value: "Tòa nhà Hanoi Group, Đội Cẩn, Ba Đình, Hà Nội" },
+            { key: "Thành phố", value: "Hà Nội" },
+            { key: "Quốc tịch", value: "Việt Nam" },
+            { key: "Postal/Zip Code", value: "2300089" },
+            { key: "Phone", value: "09812365126" }
+        ],
+        [
+            { key: "Tên", value: "Giang" },
+            { key: "Họ & tên đệm", value: "Lê Anh" },
+            { key: "Công ty", value: "Cổ phần công nghệ DKT" },
+            { key: "Địa chỉ", value: "Tòa nhà Hanoi Group, Đội Cẩn, Ba Đình, Hà Nội" },
+            { key: "Thành phố", value: "Hà Nội" },
+            { key: "Quốc tịch", value: "Việt Nam" },
+            { key: "Postal/Zip Code", value: "2300089" },
+            { key: "Phone", value: "09812365126" }
+        ]
     ]

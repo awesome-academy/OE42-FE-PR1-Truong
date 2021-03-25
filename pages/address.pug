@@ -1,0 +1,39 @@
+extend layouts/layout
+
+block title
+    title Địa chỉ
+
+block content
+    include partials/header
+    main#address.px-2.p-md-0
+        +breadcrumb(["Trang chủ", "Địa chỉ"])
+        +titleWithArrow("ĐỊA CHỈ")
+        .address-container.container-fluid
+            .row 
+                .col-12.col-lg-6
+                    .address-header ĐỊA CHỈ CỦA BẠN
+                    for item in addressData
+                        +formInput(item.name, item.type, item.value, 3)
+                    .row 
+                        .button-group.col-12.offset-md-3.col-md-9
+                            +buttonText("Chỉnh sửa địa chỉ")
+                            +buttonText("Xóa")
+                    hr
+                    for addr, ind in addresses 
+                        for item in addr
+                            .text-item.row 
+                                .col-4= item.key
+                                .col-8= item.value
+                        .edit-address-link.col-12
+                            a(href="") Chỉnh sửa địa chỉ
+                        if ind !== addresses.length - 1
+                            hr
+                .col-12.col-lg-6
+                    a(href="").address-header Thêm địa chỉ
+                    for item in addressDataAdd
+                        +formInput(item.name, item.type, item.value, 3)
+                    .row 
+                        .button-group.col-12.offset-md-3.col-md-9
+                            +buttonText("Cập nhật địa chỉ")
+                            +buttonText("Thoát")
+    include partials/footer
