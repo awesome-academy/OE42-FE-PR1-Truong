@@ -42,7 +42,7 @@ block content
                                                 .title= wine.title
                                                 for item in wine.data
                                                     .item
-                                                        a(href="/list-table.html")= item
+                                                        a(href="/list-table.html")= item.name
                                 .col-12.col-md-4.d-none.d-lg-block
                                     img(src="./../assets/images/Depositphotos_3010981_original1.jpg" alt="")
                         for menu in bottomMenues
