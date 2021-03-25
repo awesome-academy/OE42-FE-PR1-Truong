@@ -1,0 +1,43 @@
+extend layouts/layout
+
+block title
+    title Liên hệ
+
+block content
+    include partials/header
+    main#contact.px-2.p-md-0
+        +breadcrumb(["Trang chủ", "Liên hệ"])
+        +titleWithArrow("LIÊN HỆ")
+        .container-fluid.p-0.my-5
+            .row
+                .main-contact.col-12.col-md-9
+                    .map 
+                        img(src="./../assets/images/map.png" alt="google map")
+                    form
+                        +formInput("Your Name", "text")
+                        +formInput("Your Email", "text")
+                        +formInput("Subject", "text")
+                        +formInput("Your Message", "textarea")
+                        .row
+                            .col-12.col-md-10.offset-md-2
+                                button.smallButtonText(type="submit") GỬI
+                .info.col-12.col-md-3
+                    img(src="./../assets/images/my-logo.png" alt="company")
+                    .info-item 
+                        .info-icon
+                            i.fa.fa-map-marker 
+                        .info-content Tầng 4 tòa nhà Hanoi Group, số 442 Đội Cấn, Ba Đình, Hà Nội
+                    .info-item 
+                        .info-icon
+                            i.fa.fa-phone
+                        .info-content (04) 5612 8912
+                    .info-item 
+                        .info-icon
+                            i.fa.fa-envelope
+                        .info-content support@bizly.com
+                    .info-title FOLLOW US
+                    .info-network 
+                        for network in networks
+                            a(href="")
+                                i.fa(class="fa-" + network.icon)
+    include partials/footer

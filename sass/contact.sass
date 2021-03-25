@@ -1,0 +1,28 @@
+@import "styles/vars"
+@import "styles/common"
+
+main#contact
+    @extend %responsiveContainer
+    .main-contact
+        .map
+            margin-bottom: 3rem
+            img
+                width: 100%
+    .info
+        img
+            width: 100%
+            margin: auto
+        .info-item
+            display: flex
+            margin: 1rem 0
+            .info-icon
+                margin-right: 0.5rem
+            .info-content
+                flex: 1
+        .info-title
+            margin-top: 2rem
+        .info-network
+            margin-top: 1rem
+            @include link-style(grey, orange)
+            a
+                margin-right: 0.5rem
