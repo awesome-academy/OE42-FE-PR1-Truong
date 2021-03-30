@@ -43,18 +43,18 @@ mixin addChampagne(champagne)
         +buttonText("ADD TO CART")
 
 mixin addListViewChampagne(champagne)
-    .row.listViewCard
-        .col-12.col-lg-3
+    .row.listViewCard.gx-0
+        .col-12.col-sm-3.px-2
             a(href="/detail.html")
                 img(src=`./../assets/products/${champagne.img}` alt="champagne")
-        .col-12.col-lg-9.mx-2.mx-md-0
+        .col-12.col-sm-9.px-2
             .name
                 a(href="/detail.html")= champagne.name
             .price 
                 span
                     span= champagne.price
                     sup đ
-            .description= champagne.description
+            p.description= champagne.description
             .action-product
                 +buttonText("ADD TO CART")
                 .action-child

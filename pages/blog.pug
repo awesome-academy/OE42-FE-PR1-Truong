@@ -8,9 +8,8 @@ block content
     main#blog.px-2.p-md-0
         +breadcrumb(["Trang chủ", "Blog"])
         +titleWithArrow("BLOG")
-        .container-fluid.p-0.my-5
-            .row
-                for blog in blogs
-                    .col-12.col-md-4.blog-card
-                        +addBlog(blog)
+        .blog-container
+            for blog in blogs
+                .blog-card
+                    +addBlog(blog)
     include partials/footer

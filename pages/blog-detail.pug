@@ -5,10 +5,10 @@ block title
 
 block content
     include partials/header
-    main#blog-detail.px-2.p-md-0
+    main#blog-detail.px-2.px-md-0
         +breadcrumb(["Trang chủ", "Blog"])
         +titleWithArrow("BLOG")
-        .container-fluid.p-0.my-5
+        .container-fluid.my-5
             .row
                 .sub.col-12.col-md-4
                     .title BÀI VIẾT MỚI NHẤT
@@ -19,7 +19,7 @@ block content
                     .title LATEST VIDEO
                     video(controls)
                         source(src="./../assets/videos/mov_bbb.mp4" type="video/mp4") 
-                .main.col-12.col-md-8
+                .main.col-12.col-md-8.my-5.my-md-0
                     .img 
                         img(src="./../assets/images/grapes.jpg" alt="")
                     .title VANG THĂNG LONG CLASSIC

@@ -22,6 +22,10 @@ block content
                                 if hd.key === "img"
                                     td
                                         img(src=`./../assets/products/${item.img}` alt="wine")
+                                else if hd.key === "price" || hd.key === "total"
+                                    td.money
+                                        span= item[hd.key]
+                                        sup đ
                                 else
                                     td= item[hd.key]
                             td

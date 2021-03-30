@@ -11,13 +11,14 @@ block content
         .address-container.container-fluid
             .row 
                 .col-12.col-lg-6
-                    .address-header ĐỊA CHỈ CỦA BẠN
-                    for item in addressData
-                        +formInput(item.name, item.type, item.value, 3)
-                    .row 
-                        .button-group.col-12.offset-md-3.col-md-9
-                            +buttonText("Chỉnh sửa địa chỉ")
-                            +buttonText("Xóa")
+                    form
+                        .address-title ĐỊA CHỈ CỦA BẠN
+                        for item in addressData
+                            +formInput(item.name, item.type, item.value, 3)
+                        .row 
+                            .button-group.col-12.offset-md-3.col-md-9
+                                button(type="submit") Chỉnh sửa địa chỉ
+                                button(type="reset") Xóa
                     hr
                     for addr, ind in addresses 
                         for item in addr
@@ -28,12 +29,13 @@ block content
                             a(href="") Chỉnh sửa địa chỉ
                         if ind !== addresses.length - 1
                             hr
-                .col-12.col-lg-6
+                hr.my-3.d-block.d-lg-none
+                form.col-12.col-lg-6
                     a(href="").address-header Thêm địa chỉ
                     for item in addressDataAdd
                         +formInput(item.name, item.type, item.value, 3)
                     .row 
                         .button-group.col-12.offset-md-3.col-md-9
-                            +buttonText("Cập nhật địa chỉ")
-                            +buttonText("Thoát")
+                            button(type="submit") Cập nhật địa chỉ
+                            button(type="button") Thoát
     include partials/footer

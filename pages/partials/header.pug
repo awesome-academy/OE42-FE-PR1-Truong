@@ -16,9 +16,10 @@ header.common-header
                 .dropdown-menu.top-menu-dropdown(aria-labelledby='topMenuButton')
                     for menu in menues
                         a.dropdown-item(href=menu.link)= menu.name
-        .search-bar.px-0.px-lg-2.px-xl-5.mx-3.mx-md-0
-            input(type="text" placeholder="Tìm kiếm ở đây ...")
-            i.fa.fa-search
+        form.search-bar.px-0.px-lg-2.px-xl-5.mx-3.mx-md-0
+            input(type="text" name="search" placeholder="Tìm kiếm ở đây ...")
+            button(type="submit")
+                i.fa.fa-search
     section.bottom-header
         .container-xl
             .row 

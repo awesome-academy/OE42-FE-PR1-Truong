@@ -9,31 +9,32 @@ block content
         .container-fluid
             +breadcrumb(["Trang chủ", "Sản phẩm", "Rượu vang đỏ"])
             .row.mb-5
-                .image-container.col-12.col-lg-6
-                    .row.h-100
+                .image-container.col-12.col-md-6.offset-md-3.col-lg-6.offset-lg-0
+                    .image-content.row.h-100
                         .image-list.col-2
-                            .item.row.m-0
+                            .arrow-item.row.m-0
                                 i.fa.fa-arrow-up
-                            for img in productImgs
-                                .item.row.m-0
-                                    input(
-                                        type="radio"
-                                        name="photo"
-                                        id=img.name
-                                        class=`photo-${img.name}`
-                                        value=img.name
-                                        checked=img.active
-                                    )
-                                    label.label-photo.w-100.h-100.p-0(
-                                        for=img.name
-                                        class=img.name
-                                    )
-                                        img(src=`./../assets/products/${img.img}` alt=img.alt)
-                            .item.row.m-0
+                            .image-list-container
+                                for img in productImgs
+                                    .image-item.row.m-0
+                                        input(
+                                            type="radio"
+                                            name="photo"
+                                            id=img.name
+                                            class=`photo-${img.name}`
+                                            value=img.name
+                                            checked=img.active
+                                        )
+                                        label.label-photo.w-100.h-100.p-0(
+                                            for=img.name
+                                            class=img.name
+                                        )
+                                            img(src=`./../assets/products/${img.img}` alt=img.alt)
+                            .arrow-item.row.m-0
                                 i.fa.fa-arrow-down
                         .photo.col-10
                             img(src="./../assets/products/1.jpg" alt="")
-                .info-container.col-12.col-lg-6
+                .info-container.col-12.col-md-6.offset-md-3.col-lg-6.offset-lg-0
                     .title RƯỢU NHO NĂM 1987
                     img(src="./../assets/images/titleleft-dark.png" alt="")
                     .price
@@ -48,38 +49,42 @@ block content
                         span &nbsp;1 Review(s)
                         span &nbsp;|&nbsp;
                         span Add Your Review
-                    .label MÀU SẮC
-                    .color
-                        for color in colors
-                            input(
-                                type="radio"
-                                name="color"
-                                id=color.name
-                                value=color.name
-                                checked=color.active
-                            )
-                            label.label-color(class=`color-${color.name}` for=color.name)
-                    .label KÍCH CỠ
-                    select
-                        option(value="large") Loại to
-                        option(value="medium") Loại vừa
-                        option(value="small") Loại nhỏ
-                    .label SỐ LƯỢNG 
-                    .number-qty 
-                        .icon 
-                            i.fa.fa-minus
-                        .number
-                            input(type="text" value="3")
-                        .icon 
-                            i.fa.fa-plus
-                        .button-text ADD TO CART
-                    .action 
-                        i.fa.fa-heart
-                        span &nbsp;Yêu thích
-                        i.fa.fa-compress
-                        span &nbsp;So sánh
-                        i.fa.fa-envelope
-                        span &nbsp;Email
+                    form
+                        .label MÀU SẮC
+                        .color
+                            for color in colors
+                                input(
+                                    type="radio"
+                                    name="color"
+                                    id=color.name
+                                    value=color.name
+                                    checked=color.active
+                                )
+                                label.label-color(class=`color-${color.name}` for=color.name)
+                        .label KÍCH CỠ
+                        select(name="size")
+                            option(value="large") Loại to
+                            option(value="medium") Loại vừa
+                            option(value="small") Loại nhỏ
+                        .label SỐ LƯỢNG 
+                        .number-qty 
+                            button(type="button")
+                                i.fa.fa-minus
+                            .number
+                                input(type="text" name="qty" value="3")
+                            button(type="button")
+                                i.fa.fa-plus
+                            button(type="submit").smallButtonText ADD TO CART
+                    .action
+                        .action-item
+                            i.fa.fa-heart
+                            span &nbsp;Yêu thích
+                        .action-item
+                            i.fa.fa-bar-chart
+                            span &nbsp;So sánh
+                        .action-item
+                            i.fa.fa-envelope
+                            span &nbsp;Email
                     .label MÔ TẢ
                     p Một hợp chất có trong rượu vang được gọi là revestrato có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.
                     .network 
@@ -120,5 +125,5 @@ block content
                 .img.col-12.col-lg-4
                     img(src="./../assets/images/Depositphotos_3010981_original1.jpg" alt="wine champagne")
         +title("SẢN PHẨM LIÊN QUAN")
-        +slider(champagnes)
+        +productSlider(champagnes)
     include partials/footer
