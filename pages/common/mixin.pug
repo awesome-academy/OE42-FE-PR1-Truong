@@ -8,14 +8,35 @@ mixin buttonText(name)
 
 mixin addChampagne(champagne)
     .champagne-card
-        a(href="/detail.html") 
-            img(src=`./../assets/products/${champagne.img}` alt="champagne")
+        .img-container
+            a(href="/detail.html") 
+                img(src=`./../assets/products/${champagne.img}` alt="champagne")
+            .action 
+                .action-item
+                    i.fa.fa-heart 
+                    span Yêu thích
+                .action-item
+                    i.fa.fa-bar-chart 
+                    span So sánh
+                .action-item
+                    i.fa.fa-compress
+            if champagne.type !== "none"
+                case champagne.type 
+                    when "sale"
+                        .tag-anchor.sale
+                            .text Sale
+                    when "new"
+                        .tag-anchor.new
+                            .text New
+                    when "hot"
+                        .tag-anchor.hot
+                            .text Hot
         a.name(href="/detail.html")= champagne.name
         .price 
             span.originPrice
                 span= champagne.originPrice
                 sup đ
-            span &nbsp;&nbsp;
+            span &nbsp;-&nbsp;
             span.salePrice
                 span= champagne.salePrice
                 sup đ
@@ -44,14 +65,14 @@ mixin addListViewChampagne(champagne)
                     span So sánh
 
 mixin productSlider(products)
-    .product-slider.container-fluid
-        .product-bound.row
+    .product-slider
+        .product-bound
             .prevBtn
                 i.fa.fa-arrow-left
             .nextBtn.disabled
                 i.fa.fa-arrow-right
             for product in products 
-                .item.col-6.col-sm-3
+                .item
                     +addChampagne(product)
 
 mixin slider(items)

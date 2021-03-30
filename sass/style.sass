@@ -55,15 +55,57 @@
 
 .champagne-card
     text-align: center
-    img
-        width: 100%
+    .img-container
+        position: relative
+        img
+            width: 100%
+        .action
+            display: none
+            font-size: 0.8rem
+            position: absolute
+            bottom: 0
+            left: 0
+            right: 0
+            background-color: black
+            color: white
+            margin: 0 0.5rem
+            padding: 0.2rem 0.5rem
+            justify-content: space-between
+            .action-item
+                &:hover
+                    cursor: pointer
+                    color: orange
+                i.fa
+                    margin-right: 0.2rem
+        .tag-anchor
+            position: absolute
+            top: 0.5rem
+            left: 0
+            width: 3rem
+            height: 3rem
+            overflow: hidden
+            &[class~="sale"]
+                background: linear-gradient(to bottom right, orange 45%, transparent 45%, orange 50%, transparent 50%)
+            &[class~="new"]
+                background: linear-gradient(to bottom right, green 45%, transparent 45%, green 50%, transparent 50%)
+            &[class~="hot"]
+                background: linear-gradient(to bottom right, red 45%, transparent 45%, red 50%, transparent 50%)
+            .text
+                font-size: 0.8rem
+                transform: rotateZ(-45deg)
+                color: white
+                width: 1.4142 * 100%
+                height: 1.4142 * 100%
+                position: relative
+                top: -0.1rem
+                left: -0.1rem
     a.name
         text-decoration: none
         font-weight: bold
+        display: inline-block
+        margin-top: 1rem
         &:link, &:visited
             color: grey
-        &:hover, &:active
-            color: orange
     .price
         font-size: 1.1rem
         margin: 1rem 0
@@ -78,33 +120,41 @@
     .buttonText
         font-size: 0.8rem
         margin: auto
+    &:hover
+        .img-container
+            .action
+                display: flex
+        a.name
+            color: orange
+        .buttonText
+            background-color: orange
 
 .blog-card
     margin-bottom: 1rem
     @include fit-image(60%)
     .img
         .icon
-            display: flex
-            justify-content: center
-            align-items: center
-            position: absolute
-            top: 0
-            left: 0
-            right: 0
-            bottom: 0
+            @extend %center-in-div
+            @extend %absolute-100
             transition-duration: 0.3s
-            background-color: rgba(0, 0, 0, 0)
-            color: white
+            opacity: 0.5
+            background: linear-gradient(to bottom right, transparent 50%, rgba(255, 255, 255, 0) 50%)
             i.fa
-                visibility: hidden
-                font-size: 0
+                opacity: 0
+                font-size: 1rem
+                border-radius: 1rem
+                padding: 0.5rem
                 transition-duration: 0.3s
+                transform: rotateZ(-180deg)
+                background-color: white
+                color: black
             &:hover
                 cursor: pointer
-                background-color: rgba(0, 0, 0, 0.5)
+                opacity: 1
+                background: linear-gradient(to bottom right, transparent 50%, rgba(255, 255, 255, 0.5) 50%)
                 i.fa
-                    visibility: visible
-                    font-size: 1.5rem
+                    opacity: 1
+                    transform: rotateZ(0)
     .title
         letter-spacing: 0.1rem
         margin: 0.5rem 0

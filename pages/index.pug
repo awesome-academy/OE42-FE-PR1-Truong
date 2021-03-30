@@ -3,6 +3,20 @@ extend layouts/layout
 block title
     title Trang chủ
 
+block style
+    link(rel="stylesheet" href="./css/style.css")
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+        crossorigin="anonymous"
+    )
+    link(rel='preconnect' href='https://fonts.gstatic.com')
+    link(href='https://fonts.googleapis.com/css2?family=Pacifico&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Spectral&display=swap' rel='stylesheet')
+
 block content
     header 
         section.top-header.py-2
@@ -26,7 +40,9 @@ block content
                 input(type="text" placeholder="Tìm kiếm ở đây ...")
                 i.fa.fa-search
         section.title 
-            img(src="./../assets/images/text.png" alt="")
+            .main-text Rượu
+            .sub-text Since 1980
+            .top-text Vang Đỏ
         section.bottom-header 
             .container-xl
                 .row 
@@ -87,14 +103,22 @@ block content
                         div 60<br>phút
                         div 15<br>giây
         +title("SẢN PHẨM MỚI")
-        +slider(champagnes)
+        +productSlider(champagnes)
         .images.container-fluid
             .row 
                 for img in images
                     .img.col-6.col-md-3.p-0
                         img(src=`./../assets/images/${img.name}` alt=img.alt)
+                        .wine-hover 
+                            .year 1987
+                            .text
+                                span RƯỢU
+                                .top-border
+                                .bottom-border
+                                .left-border
+                                .right-border
         +title("SẢN PHẨM BÁN CHẠY")
-        +slider(champagnes)
+        +productSlider(champagnes)
         .bottom-content.container-fluid 
             .row 
                 .col-12.col-md-8
@@ -108,10 +132,13 @@ block content
                     .icon
                         i.fa.fa-quote-right
                     .text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ...
-                    .readmore Read more 
-                    .thumb-img 
-                        img(src="./../assets/images/timthumb2.jpg" alt="")
-                    .name GIANG LT
-                    .job Graphic design 
+                    .readmore Read more
+                    .employee-slider
+                        for employee in employees
+                            .employee-item
+                                .thumb-img 
+                                    img(src=`./../assets/images/${employee.img}` alt="")
+                                .name= employee.name
+                                .job= employee.job
                     +dotPagi(3, 1)
     include partials/footer
