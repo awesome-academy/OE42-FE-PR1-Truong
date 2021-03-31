@@ -35,6 +35,8 @@ block content
                                             else if hd.key === "action"
                                                 td 
                                                     a(href="") Chi tiết
+                                            else if hd.key === "total"
+                                                td= item.total + "đ"
                                             else if hd.key === "code_and_date_order"
                                                 td 
                                                     .code-and-date= item.billCode + " - " + item.buyDate
@@ -57,6 +59,7 @@ block content
                         .icon
                             i.fa.fa-phone
                         .content (04) 1235 7856
-                    
+                    .customer-item 
+                        a(href="") Chi tiết địa chỉ
 
     include partials/footer

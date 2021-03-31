@@ -17,7 +17,7 @@ footer
                                         p.tutorial Đăng ký email ngay hôm nay để nhận được thông tin về các sự kiện, các chương trình giảm giá của chúng tôi sớm nhất!
                                         form
                                             .form-item.mx-1.mx-sm-0
-                                                input(type="text" placeholder="Email của bạn...")
+                                                input(type="text" name="email" placeholder="Email của bạn...")
                                                 input(type="submit", value="GỬI EMAIL")
                                             input#not-again.my-3(type="checkbox")
                                             label.mx-1.my-3(for="not-again") Không hiển thị lại thông báo này
@@ -40,9 +40,9 @@ footer
                     .send-email.col-12.col-lg-6
                         .title GỬI EMAIL
                         .description Gửi email cho chúng tôi để được hỗ trợ
-                        .input
-                            input(type="text" placeholder="Enter your email")
-                            button.button(data-toggle="modal" data-target="#exampleModal") GỬI
+                        form.input
+                            input(type="text" name="email" placeholder="Enter your email")
+                            button.button(type="button" data-toggle="modal" data-target="#exampleModal") GỬI
                         .icons 
                             for icon in footerIcons 
                                 i.fa(class=`fa-${icon.icon}`)
