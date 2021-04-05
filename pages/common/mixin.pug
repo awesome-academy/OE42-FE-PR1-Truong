@@ -71,9 +71,10 @@ mixin productSlider(products)
                 i.fa.fa-arrow-left
             .nextBtn.disabled
                 i.fa.fa-arrow-right
-            for product in products 
-                .item
-                    +addChampagne(product)
+            .item-container
+                for product in products 
+                    .item
+                        +addChampagne(product)
 
 mixin slider(items)
     #carouselExampleControls.carousel.slide(data-ride='carousel')

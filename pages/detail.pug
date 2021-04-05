@@ -35,7 +35,7 @@ block content
                         .photo.col-10
                             img(src="./../assets/products/1.jpg" alt="")
                 .info-container.col-12.col-md-6.offset-md-3.col-lg-6.offset-lg-0
-                    .title RƯỢU NHO NĂM 1987
+                    .title
                     img(src="./../assets/images/titleleft-dark.png" alt="")
                     .price
                         span 330.000
@@ -49,7 +49,8 @@ block content
                         span &nbsp;1 Review(s)
                         span &nbsp;|&nbsp;
                         span Add Your Review
-                    form
+                    form#add-form(method="post")
+                        input(type="hidden" name="id")
                         .label MÀU SẮC
                         .color
                             for color in colors
@@ -68,11 +69,11 @@ block content
                             option(value="small") Loại nhỏ
                         .label SỐ LƯỢNG 
                         .number-qty 
-                            button(type="button")
+                            button#minus-btn(type="button")
                                 i.fa.fa-minus
                             .number
-                                input(type="text" name="qty" value="3")
-                            button(type="button")
+                                input(type="number" name="qty" value="1")
+                            button#plus-btn(type="button")
                                 i.fa.fa-plus
                             button(type="submit").smallButtonText ADD TO CART
                     .action
@@ -86,7 +87,7 @@ block content
                             i.fa.fa-envelope
                             span &nbsp;Email
                     .label MÔ TẢ
-                    p Một hợp chất có trong rượu vang được gọi là revestrato có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.
+                    p.description
                     .network 
                         .facebook 
                             i.fa.fa-facebook-square
@@ -121,9 +122,21 @@ block content
                                 role='tabpanel'
                                 aria-labelledby=`pills-${item.key}-tab`
                                 class={"show active" : index === 0}
-                            )= item.info
+                            )
                 .img.col-12.col-lg-4
                     img(src="./../assets/images/Depositphotos_3010981_original1.jpg" alt="wine champagne")
         +title("SẢN PHẨM LIÊN QUAN")
         +productSlider(champagnes)
     include partials/footer
+
+    .toast-container.position-fixed.top-0.end-0.p-3
+
+    .spinner.active
+        .spinner-border.text-warning(role='status')
+        span.visually-hidden Loading...
+
+block module 
+    script(type="module" src="./js/vars.js")
+    script(type="module" src="./js/mixin.js")
+    script(type="module" src="./js/apis.js")
+    script(type="module" src="./js/detail.js")

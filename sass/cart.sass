@@ -16,8 +16,33 @@ main#cart
                 vertical-align: middle
                 img
                     width: 5rem
+                input
+                    text-align: center
+                    max-width: 5rem
+                i.fa
+                    cursor: pointer
                 &[class~="money"]
                     color: orange
+                &[class~="edit-action"]
+                    .edit-btn
+                        display: inline
+                    .save-btn
+                        display: none
+                    &[class~="editable"]
+                        .edit-btn
+                            display: none
+                        .save-btn
+                            display: inline
+                &[class~="quantity-col"]
+                    span
+                        display: inline
+                    input
+                        display: none
+                    &[class~="editable"]
+                        span
+                            display: none
+                        input
+                            display: inline
     .cart-action
         .buttonText
             margin-top: 0.5rem

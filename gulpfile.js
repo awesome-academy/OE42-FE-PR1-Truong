@@ -25,7 +25,7 @@ function htmlTask() {
 }
 
 function jsTask() {
-  return src(FilesPath.jsFiles).pipe(concat("all.js")).pipe(dest("dist/js"));
+  return src(FilesPath.jsFiles).pipe(dest("dist/js"));
 }
 
 function assetsTask() {

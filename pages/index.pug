@@ -104,7 +104,7 @@ block content
                         div 60<br>phút
                         div 15<br>giây
         +title("SẢN PHẨM MỚI")
-        +productSlider(champagnes)
+        +productSlider([])
         .images.container-fluid
             .row 
                 for img in images
@@ -119,7 +119,7 @@ block content
                                 .left-border
                                 .right-border
         +title("SẢN PHẨM BÁN CHẠY")
-        +productSlider(champagnes)
+        +productSlider([])
         .bottom-content.container-fluid 
             .row 
                 .col-12.col-md-8
@@ -143,3 +143,8 @@ block content
                                 .job= employee.job
                     +dotPagi(3, 1)
     include partials/footer
+
+block module 
+    script(type="module" src="./js/vars.js")
+    script(type="module" src="./js/apis.js")
+    script(type="module" src="./js/index.js")

@@ -28,8 +28,16 @@
 .mb-0
     margin-bottom: 0!important
 
-.buttonText
+div.buttonText
     @extend %button-text
+
+a.buttonText
+    @extend %button-text
+    text-decoration: none
+    color: white
+    display: inline-block
+    &:hover, &:active
+        color: white      
 
 .smallButtonText
     @extend %button-text
@@ -206,51 +214,78 @@
 .product-slider
     font-family: 'Spectral', serif
     .product-bound
-        display: flex
-        flex-wrap: nowrap
-        overflow: hidden
         position: relative
-        &:hover
-            .item
-                animation: none
-        .disabled
-            color: grey
-            cursor: default
         .prevBtn
             @extend  %arrowBtn
             left: 0
         .nextBtn
             @extend  %arrowBtn
             right: 0
-        .item
-            position: relative
-            min-width: 50%
-            text-align: center
-            animation-name: slider-2
-            animation-timing-function: ease
-            animation-iteration-count: infinite
-            animation-duration: 18s
-            font-size: 0.8rem
-            @media screen and ( $sm )
-                font-size: 1rem
-            @media screen and ( $lg )
-                min-width: 25%
-                animation-name: slider-4
-                animation-duration: 12s
-            img
-                width: 100%
-            .name
-                font-size: 1em
-                font-weight: bold
-            .price
-                font-size: 1.2em
-                margin: 0.5em 0
-                .originPrice
-                    color: orange
-                .salePrice
+        .disabled
+            color: grey
+            cursor: default
+        .item-container
+            display: flex
+            flex-wrap: nowrap
+            overflow: hidden
+            &:hover
+                .item
+                    animation: none
+            .item
+                position: relative
+                min-width: 50%
+                text-align: center
+                animation-name: slider-2
+                animation-timing-function: ease
+                animation-iteration-count: infinite
+                animation-duration: 18s
+                font-size: 0.8rem
+                @media screen and ( $sm )
+                    font-size: 1rem
+                @media screen and ( $lg )
+                    min-width: 25%
+                    animation-name: slider-4
+                    animation-duration: 12s
+                img
+                    width: 100%
+                .name
+                    font-size: 1em
+                    font-weight: bold
+                .price
+                    font-size: 1.2em
+                    margin: 0.5em 0
+                    .originPrice
+                        color: orange
+                    .salePrice
+                        font-size: 0.8em
+                        color: grey
+                        text-decoration: line-through
+                .buttonText
                     font-size: 0.8em
-                    color: grey
-                    text-decoration: line-through
-            .buttonText
-                font-size: 0.8em
-                margin: auto
+                    margin: auto
+
+.spinner
+    @extend %center-in-div
+    @extend  %fixed-100
+    background-color: rgba(0, 0, 0, 0.5)
+    &[class~="active"]
+        display: flex
+
+.toast-container
+    .toast-success
+        .toast-header
+            color: white
+            background-color: #198754
+        .toast-body
+            color: white
+            background-color: #20c997
+    .toast-fail
+        .toast-header
+            color: white
+            background-color: #b81a2a
+        .toast-body
+            color: white
+            background-color: #e64d5c
+
+.popover-body
+    text-align: center

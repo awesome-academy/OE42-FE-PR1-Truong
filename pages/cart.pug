@@ -14,24 +14,18 @@ block content
                     tr 
                         for hd in cartTableHeaders
                             th(scope="col")= hd.name
+                        th(scope="col") Sửa
                         th(scope="col") Xóa
-                tbody 
-                    for item in cartData 
-                        tr 
-                            for hd in cartTableHeaders
-                                if hd.key === "img"
-                                    td
-                                        img(src=`./../assets/products/${item.img}` alt="wine")
-                                else if hd.key === "price" || hd.key === "total"
-                                    td.money
-                                        span= item[hd.key]
-                                        sup đ
-                                else
-                                    td= item[hd.key]
-                            td
-                                i.fa.fa-trash
+                tbody
         .cart-action.d-block.d-sm-flex
             +buttonText("TIẾP TỤC MUA HÀNG")
             +buttonText("XÓA")
             +buttonText("CẬP NHẬT")
     include partials/footer
+    .toast-container.position-fixed.top-0.end-0.p-3
+
+block module 
+    script(type="module" src="./js/vars.js")
+    script(type="module" src="./js/mixin.js")
+    script(type="module" src="./js/apis.js")
+    script(type="module" src="./js/cart.js")
