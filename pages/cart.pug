@@ -6,6 +6,7 @@ block title
 block content
     include partials/header
     main#cart.px-2.p-md-0
+        +progress(progressStatuses)
         +breadcrumb(["Trang chủ", "Sản phẩm", "Giỏ hàng"])
         +titleWithArrow("GIỎ HÀNG")
         .table-responsive
@@ -18,9 +19,8 @@ block content
                         th(scope="col") Xóa
                 tbody
         .cart-action.d-block.d-sm-flex
-            +buttonText("TIẾP TỤC MUA HÀNG")
-            +buttonText("XÓA")
-            +buttonText("CẬP NHẬT")
+            a(href="/").buttonText TIẾP TỤC MUA HÀNG
+            a#choose-address-btn(href="/address.html?payment=true").buttonText LỰA CHỌN ĐỊA CHỈ
     include partials/footer
     .toast-container.position-fixed.top-0.end-0.p-3
 

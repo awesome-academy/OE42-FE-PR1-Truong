@@ -1,0 +1,76 @@
+extend layouts/layout
+
+block title
+    title Thanh toán &amp; Đặt mua
+
+block content
+    include partials/header
+    main#payment.px-2.p-md-0
+        +progress(progressStatuses)
+        +breadcrumb(["Trang chủ", "Thanh toán & Đặt mua"])
+        +titleWithArrow("THANH TOÁN & ĐẶT MUA")
+        .container-fluid 
+            .row 
+                form#pay-form.col-12.col-md-8
+                    .orders-container
+                    for selectGroup, index in paymentSelections
+                        .select-item 
+                            .title= index + 1 + ". " + selectGroup.title
+                            .select-container
+                                for option in selectGroup.options
+                                    .option
+                                        input(id=option.key type="radio" name=selectGroup.key value=option.value)
+                                        label(for=option.key)
+                                            if option.icon !== "none"
+                                                i.fa(class=`fa-${option.icon}`)
+                                            span= option.name
+                    button(type="submit") ĐẶT MUA
+                    .tip (Xin vui lòng kiểm tra lại đơn hàng trước khi Đặt Mua)
+                .col-12.col-md-4
+                    .custom-fieldset
+                        .custom-title-container
+                            .custom-title Địa chỉ giao hàng
+                            a(href="/address.html?payment=true") Sửa
+                        .address-info
+                    .custom-fieldset 
+                        .custom-title-container
+                            .custom-title Đơn hàng
+                            a(href="/cart.html") Sửa
+                        .orders-info
+                            .order-items-bound
+                            .order-payment 
+                                .order-payment-item 
+                                    .order-payment-title Tạm tính
+                                    .order-payment-value
+                                        span 0
+                                        sup đ
+                                .order-payment-item 
+                                    .order-fee-title Phí vận chuyển
+                                    .order-fee-value
+                                        span 0
+                                        sup đ
+                            .order-total 
+                                .order-total-title Thành tiền
+                                .order-total-price
+                                    .total-price
+                                        span 0
+                                        sup đ
+                                    .total-tip (Đã bao gồm VAT nếu có)
+                    .custom-fieldset
+                        .custom-title-container
+                            .custom-title Thời điểm nhận hàng
+                        .time-delivered Vui lòng chọn thời gian nhận hàng
+
+    include partials/footer
+
+    .toast-container.position-fixed.top-0.end-0.p-3
+
+    .spinner
+        .spinner-border.text-warning(role='status')
+        span.visually-hidden Loading...
+
+block module 
+    script(type="module" src="./js/vars.js")
+    script(type="module" src="./js/mixin.js")
+    script(type="module" src="./js/apis.js")
+    script(type="module" src="./js/payment.js")

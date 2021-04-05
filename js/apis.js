@@ -1,11 +1,32 @@
 import * as url from "./vars.js";
+import { customFetch } from "./mixin.js";
 
+// Product
 export const getAllProducts = async () =>
-  fetch(url.GET_ALL_PRODUCTS_API)
-    .then((res) => res.json())
-    .catch((err) => console.log(err));
+  customFetch(url.GET_ALL_PRODUCTS_API, "get");
 
 export const getProduct = async (id) =>
-  fetch(url.GET_PRODUCT_API + id)
-    .then((res) => res.json())
-    .catch((err) => console.log(err));
+  customFetch(url.GET_PRODUCT_API + id, "get");
+
+// Address
+export const getMainAddress = async () =>
+  customFetch(url.MAIN_ADDRESS_URL, "get");
+
+export const putMainAddress = async (address) =>
+  customFetch(url.MAIN_ADDRESS_URL, "put", address);
+
+export const getSubAddresses = async () =>
+  customFetch(url.SUB_ADDRESS_URL, "get");
+
+export const postSubAddress = async (address) =>
+  customFetch(url.SUB_ADDRESS_URL, "post", address);
+
+export const putSubAddress = async (address) =>
+  customFetch(url.SUB_ADDRESS_URL + "/" + address.id, "put", address);
+
+export const deleteSubAddress = async (id) =>
+  customFetch(url.SUB_ADDRESS_URL + "/" + id, "delete");
+
+// Order
+export const postOrder = async (order) =>
+  customFetch(url.ORDER_URL, "post", order);

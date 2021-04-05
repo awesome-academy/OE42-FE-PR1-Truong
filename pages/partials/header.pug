@@ -26,6 +26,12 @@ header.common-header
                 a(href="/").logo.col-2.d-none.d-xl-block
                     img(src="./../assets/images/logo.jpg" alt="")
                 .dropdown.menu.col-12.col-xl-10.d-none.d-md-flex
+                    for menu in bottomMenues
+                        if menu.active
+                            button#dropdownMenuButton.active(data-bs-toggle="dropdown" aria-expanded="false")= menu.name
+                        else
+                            button
+                                a(href=menu.link)= menu.name
                     .dropdown-menu(aria-labelledby="dropdownMenuButton")
                         .row 
                             .col-12.col-lg-8
@@ -38,12 +44,6 @@ header.common-header
                                                     a(href="/list-table.html")= item.name
                             .col-12.col-md-4.d-none.d-lg-block
                                 img(src="./../assets/images/Depositphotos_3010981_original1.jpg" alt="")
-                    for menu in bottomMenues
-                        if menu.active
-                            button#dropdownMenuButton.active(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")= menu.name
-                        else
-                            button
-                                a(href=menu.link)= menu.name
                 .d-block.d-md-none 
                     i.fa.fa-bars(
                         id="bottomMenuButton"
