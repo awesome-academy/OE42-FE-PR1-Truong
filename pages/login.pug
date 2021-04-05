@@ -15,11 +15,11 @@ block content
         form.login-form-container.container-fluid.my-5
             .login-form-title KHÁCH HÀNG ĐĂNG NHẬP
             .login-form-guide Nếu bạn có một tài khoản, xin vui lòng đăng nhập.
-            +formInput("Email", "text")
-            +formInput("Password", "password")
+            +formInput("Email", "text", "email")
+            +formInput("Password", "password", "password")
             .row 
                 .col-12.offset-md-2.col-md-10
-                    input(type="checkbox" id="forgot-password")
+                    input(type="checkbox" name="forgot-password" id="forgot-password")
                     label(for="forgot-password") Quên mật khẩu
             .row 
                 .login-button.col-12.offset-md-2.col-md-10

@@ -139,11 +139,11 @@ mixin blogTags(tags)
             .tag(class={active : tag.active})
                 span= tag.name
 
-mixin formInput(name, type, value = "", titleBreakpoint = 2)
+mixin formInput(name, type, key, value = "", titleBreakpoint = 2)
     .input-item.row
         if type === "checkbox"
             .input.col-12(class=`col-md-${12 - titleBreakpoint} offset-md-${titleBreakpoint}`)
-                input(type="checkbox" checked=value.checked id=value.id)
+                input(name=key type="checkbox" checked=value.checked id=value.id)
                 label(for=value.id)= name
         else
             .input-title.col-12(class=`col-md-${titleBreakpoint}`)
@@ -152,13 +152,13 @@ mixin formInput(name, type, value = "", titleBreakpoint = 2)
             .input.col-12(class=`col-md-${12 - titleBreakpoint}`)
                 case type 
                     when "text"
-                        input(type="text" value=value)
+                        input(name=key type="text" value=value)
                     when "password"
-                        input(type="text" value=value)
+                        input(name=key type="text" value=value)
                     when "textarea"
-                        textarea(rows="10")= value
+                        textarea(name=key rows="10")= value
                     when "select"
-                        select
+                        select(name=key)
                             for option in value.options
                                 option(value=option selected=value.value===option)= option
 
@@ -168,3 +168,13 @@ mixin statusItem(status)
             .status-item= "Trạng thái tát cả (" + listOrders.length + ")"
         default
             .status-item= `${orderStatuses.find(stt => stt.key === status).name} (${listOrders.filter(order => order.status === status).length})`
+
+mixin progress(statuses)
+    .progress-container
+        for status, index in statuses
+            .progress-item 
+                .text= status.name
+                .circle
+                    if index !== statuses.length - 1
+                        .bar
+                    .num= index + 1

@@ -28,7 +28,7 @@
 .mb-0
     margin-bottom: 0!important
 
-div.buttonText
+.buttonText
     @extend %button-text
 
 a.buttonText
@@ -37,7 +37,7 @@ a.buttonText
     color: white
     display: inline-block
     &:hover, &:active
-        color: white      
+        color: white
 
 .smallButtonText
     @extend %button-text
@@ -286,6 +286,41 @@ a.buttonText
         .toast-body
             color: white
             background-color: #e64d5c
+    .toast-warning
+        .toast-header
+            color: white
+            background-color: #fd7e14
+        .toast-body
+            color: white
+            background-color: #ffc107
 
 .popover-body
     text-align: center
+
+.progress-container
+    margin-top: 1rem
+    display: flex
+    .progress-item
+        flex: 1
+        text-align: center
+        .text
+            margin-bottom: 0.5rem
+        .circle
+            position: relative
+            .bar
+                position: absolute
+                width: 100%
+                height: 30%
+                top: 35%
+                left: 50%
+                background-color: lightgrey
+                z-index: -1
+            .num
+                width: 2rem
+                height: 2rem
+                border-radius: 2rem
+                background-color: lightgrey
+                color: white
+                font-weight: bold
+                margin: auto
+                @extend %center-in-div
