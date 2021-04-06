@@ -4,7 +4,13 @@ export function showToast(message, type) {
     `
           <div class="toast toast-${type} show" role="alert" aria-live="assertive" aria-atomic="true">
               <div class="toast-header"><strong class="me-auto">${
-                type === "success" ? "Thành công" : "Thất bại"
+                type === "success"
+                  ? "Thành công"
+                  : type === "fail"
+                  ? "Thất bại"
+                  : type === "warning"
+                  ? "Cảnh báo"
+                  : ""
               }</strong></div>
               <div class="toast-body">${message}</div>
           </div>
@@ -17,7 +23,6 @@ export function showToast(message, type) {
 
 export function formatCurrency(money) {
   const strNum = String(money);
-  console.log(strNum);
   let str = "";
   for (let i = strNum.length - 1, j = 0; i >= 0; i--, j++) {
     str =
@@ -25,6 +30,47 @@ export function formatCurrency(money) {
         ? strNum[i] + "." + str
         : strNum[i] + str;
   }
-  console.log(str);
   return str;
 }
+
+export function setConfirmTooltip(element, event, question, message) {
+  const { id } = element.dataset;
+  const popover = new bootstrap.Popover(element, {
+    html: true,
+    title: question,
+    content: `
+                  <span class="delete-tooltip-${id} btn btn-success btn-sm mx-1">Có, tôi muốn</span>
+                  <span class="close-tooltip-${id} btn btn-danger btn-sm mx-1">Không</span>
+              `,
+  });
+  element.addEventListener("shown.bs.popover", async () => {
+    document
+      .querySelector(`span.delete-tooltip-${id}`)
+      .addEventListener("click", function () {
+        popover.hide();
+        showToast(message, "success");
+        event();
+      });
+    document
+      .querySelector(`span.close-tooltip-${id}`)
+      .addEventListener("click", function () {
+        popover.hide();
+      });
+  });
+}
+
+export const defaultOptions = (method, body = null) =>
+  body
+    ? {
+        method,
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(body),
+      }
+    : {
+        method,
+        headers: {
+          "content-type": "application/json",
+        },
+      };

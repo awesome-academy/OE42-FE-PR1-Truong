@@ -30,6 +30,31 @@
         &:hover, &:active
             color: $hoverColor
 
+@mixin progress($index)
+    @if $index >= 1
+        &:first-of-type
+            .circle
+                .num
+                    background-color: $light-blue
+    @if $index >= 2
+        &:first-of-type
+            .circle
+                .bar
+                    background-color: $light-blue
+        &:nth-of-type(2)
+            .circle
+                .num
+                    background-color: $light-blue
+    @if $index == 3
+        &:nth-of-type(2)
+            .circle
+                .bar
+                    background-color: $light-blue
+        &:nth-of-type(3)
+            .circle
+                .num
+                    background-color: $light-blue
+
 %title
     letter-spacing: 0.2rem
     font-size: 1.2rem

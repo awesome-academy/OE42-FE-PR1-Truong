@@ -1,4 +1,4 @@
-import { showToast, formatCurrency } from "./mixin.js";
+import { showToast, formatCurrency, setConfirmTooltip } from "./mixin.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
   const orders = JSON.parse(localStorage.getItem("orders"));
@@ -83,37 +83,23 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Delete
     document.querySelectorAll("i.delete-btn").forEach((deleteBtn) => {
-      const { id } = deleteBtn.dataset;
-      const popover = new bootstrap.Popover(deleteBtn, {
-        html: true,
-        title: "Bạn có muốn xóa đơn hàng?",
-        content: `
-                  <span class="delete-tooltip-${id} btn btn-success btn-sm mx-1">Có, tôi muốn</span>
-                  <span class="close-tooltip-${id} btn btn-danger btn-sm mx-1">Không</span>
-              `,
-      });
-      deleteBtn.addEventListener("shown.bs.popover", async () => {
-        document
-          .querySelector(`span.delete-tooltip-${id}`)
-          .addEventListener("click", function () {
-            popover.hide();
-            showToast("Đã xóa đơn hàng ra khỏi giỏ hàng!", "success");
-            document.querySelector(`.row-id-${id}`).remove();
-            localStorage.setItem(
-              "orders",
-              JSON.stringify(
-                JSON.parse(localStorage.getItem("orders"))?.filter(
-                  (order) => order.id !== id
-                )
+      setConfirmTooltip(
+        deleteBtn,
+        () => {
+          const { id } = deleteBtn.dataset;
+          document.querySelector(`.row-id-${id}`).remove();
+          localStorage.setItem(
+            "orders",
+            JSON.stringify(
+              JSON.parse(localStorage.getItem("orders"))?.filter(
+                (order) => order.id !== id
               )
-            );
-          });
-        document
-          .querySelector(`span.close-tooltip-${id}`)
-          .addEventListener("click", function () {
-            popover.hide();
-          });
-      });
+            )
+          );
+        },
+        "Bạn có chắc chắn muốn xóa?",
+        "Đã xóa đơn hàng ra khỏi giỏ hàng!"
+      );
     });
   }
 });

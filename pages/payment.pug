@@ -1,0 +1,24 @@
+extend layouts/layout
+
+block title
+    title Thanh toán &amp; Đặt mua
+
+block content
+    include partials/header
+    main#payment.px-2.p-md-0
+        +progress(progressStatuses)
+        +breadcrumb(["Trang chủ", "Thanh toán & Đặt mua"])
+        +titleWithArrow("THANH TOÁN & ĐẶT MUA")
+    include partials/footer
+
+    .toast-container.position-fixed.top-0.end-0.p-3
+
+    .spinner.active
+        .spinner-border.text-warning(role='status')
+        span.visually-hidden Loading...
+
+block module 
+    script(type="module" src="./js/vars.js")
+    script(type="module" src="./js/mixin.js")
+    script(type="module" src="./js/apis.js")
+    script(type="module" src="./js/payment.js")

@@ -37,3 +37,49 @@ main#address
             a
                 font-size: 1.2em
                 text-decoration: underline
+        .sub-address-container
+            .edit-container
+                form
+                    display: none
+                    .button-group
+                        justify-content: flex-end
+                        button.cancel-btn
+                            margin-right: 0
+                .address-item
+                    display: block
+                &[class~="editing"]
+                    form
+                        display: block
+                    .address-item
+                        display: none
+        .select-address-container
+            display: none
+            flex-wrap: wrap
+            .address-item
+                flex-basis: 50%
+                box-sizing: border-box
+                margin-top: 1rem
+                &:nth-of-type(odd)
+                    padding-right: 0.5rem
+                &:nth-of-type(even)
+                    padding-left: 0.5rem
+                .address-bound
+                    border: 1px dashed grey
+                    padding: 0.5rem 1rem
+                    height: 100%
+                    background-color: $light-grey
+                    .full-name
+                        font-weight: bold
+                        font-size: 1rem
+                    button
+                        border: none
+                        background-color: grey
+                        color: white
+                        padding: 0.2rem 0.5rem
+                        margin-top: 0.5rem
+                        &[class~="primary"]
+                            background-color: $light-blue
+    .progress-container
+        display: none
+        .progress-item
+            @include progress(2)
