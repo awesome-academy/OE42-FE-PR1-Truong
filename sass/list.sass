@@ -55,9 +55,14 @@ main#list
                     cursor: pointer
                     margin-left: 0.5rem
                     color: grey
-                span
-                    &:nth-of-type(3)
+                a
+                    margin-left: 0.5rem
+                    color: grey
+                    text-decoration: none
+                    &[class~="active"]
                         color: orange
+                .pagi-page-container
+                    display: inline
         .list
             flex: 1 1 auto
             display: flex
@@ -105,4 +110,3 @@ main#list
                                 color: orange
                             i.fa
                                 margin-right: 0.2rem
-                        

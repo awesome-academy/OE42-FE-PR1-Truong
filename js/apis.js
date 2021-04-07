@@ -8,6 +8,9 @@ export const getAllProducts = async () =>
 export const getProduct = async (id) =>
   customFetch(url.GET_PRODUCT_API + id, "get");
 
+export const getPaginateProducts = async (page, limit) =>
+  fetch(`${url.GET_ALL_PRODUCTS_API}?_page=${page}&_limit=${limit}`);
+
 // Address
 export const getMainAddress = async () =>
   customFetch(url.MAIN_ADDRESS_URL, "get");

@@ -31,11 +31,19 @@ block content
                         block displayType
                         .pagi 
                             i.fa.fa-caret-left
-                            span 1
-                            span 2
-                            span 3
-                            span 4
-                            span 5
+                            .pagi-page-container
                             i.fa.fa-caret-right
                     block listProduct
     include ./../partials/footer
+
+    .toast-container.position-fixed.top-0.end-0.p-3
+    
+    .spinner
+        .spinner-border.text-warning(role='status')
+        span.visually-hidden Loading...
+
+block module 
+    script(type="module" src="./js/vars.js")
+    script(type="module" src="./js/mixin.js")
+    script(type="module" src="./js/apis.js")
+    script(type="module" src="./js/list.js")
