@@ -1,0 +1,146 @@
+@import "styles/vars"
+@import "styles/common"
+
+main#payment
+    margin-bottom: 3rem
+    @extend %responsiveContainer
+    .progress-container
+        .progress-item
+            @include progress(3)
+    .orders-container
+        margin-top: 1rem
+        padding: 0.5rem 1rem
+        border: 1px solid lightgrey
+        border-radius: 0.3rem
+        .order-item
+            display: flex
+            margin: 0.5rem 0
+            .img
+                display: flex
+                justify-content: center
+                flex-basis: 20%
+                img
+                    width: 50%
+            .order-info
+                display: flex
+                flex-direction: column
+                justify-content: center
+                flex-basis: 80%
+                margin-left: 1rem
+                .order-name
+                    color: grey
+                .order-description
+                    display: flex
+                    justify-content: space-between
+                    .order-price
+                        color: orange
+    .select-item
+        margin-top: 2rem
+        .title
+            color: grey
+            font-size: 1.2rem
+            font-weight: bold
+        .select-container
+            margin-top: 0.5rem
+            padding: 0.5rem 1rem
+            border: 1px solid lightgrey
+            border-radius: 0.3rem
+            .option
+                height: 2rem
+                margin: 0.5rem 0
+                display: flex
+                align-items: center
+                input
+                    margin-right: 0.8rem
+                    width: 1.5rem
+                    height: 1.5rem
+                label
+                    i.fa
+                        color: $light-blue
+                        margin-right: 0.5rem
+    button[type="submit"]
+        border: none
+        background-color: red
+        color: white
+        padding: 0.5rem 7rem
+        letter-spacing: 0.1rem
+        margin-top: 1rem
+        font-size: 1.2rem
+    .tip
+        margin-top: 0.5rem
+        color: grey
+        font-size: 0.8rem
+    .custom-fieldset
+        border: 1px solid lightgrey
+        padding: 0.5rem 1rem 1rem 1rem
+        margin-top: 1rem
+        border-radius: 0.3rem
+        .custom-title-container
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 0.5rem 0
+            border-bottom: 1px solid lightgrey
+            .custom-title
+                letter-spacing: 0.05rem
+            a
+                display: inline-block
+                text-decoration: none
+                padding: 0.1rem 0.5rem
+                border-radius: 0.2rem
+                background-color: $light-grey
+                border: 1px solid lightgrey
+                color: black
+        .address-info
+            .name
+                font-weight: bold
+                margin: 0.5rem 0
+            .small-text
+                font-size: 0.8rem
+        .orders-info
+            .order-items-bound
+                border-bottom: 1px solid lightgrey
+                font-size: 0.8rem
+                .order-item
+                    display: flex
+                    margin: 0.5rem 0
+                    .order-quantity
+                        flex: 1
+                        font-weight: bold
+                    .order-name
+                        flex: 6
+                        color: $light-blue
+                    .order-price
+                        flex: 3
+                        text-align: right
+                        color: orange
+            .order-payment
+                border-bottom: 1px solid lightgrey
+                font-size: 0.8rem
+                .order-payment-item
+                    display: flex
+                    justify-content: space-between
+                    margin: 0.5rem 0
+                    .order-payment-title
+                        color: grey
+                    .order-payment-value, .order-fee-value
+                        color: orange
+            .order-total
+                display: flex
+                justify-content: space-between
+                margin-top: 0.5rem
+                .order-total-title
+                    font-size: 0.8rem
+                    font-weight: bold
+                .order-total-price
+                    text-align: right
+                    .total-price
+                        color: orange
+                    .total-tip
+                        font-size: 0.8rem
+                        font-style: italic
+        .time-delivered
+            font-size: 0.8rem
+            margin-top: 1rem
+            color: #26c726
+            font-weight: bold

@@ -1,160 +1,292 @@
 {
-    "products": [
+  "products": [
+    {
+      "id": 1,
+      "name": "RƯỢU VANG HUẾ",
+      "img": "1.jpg",
+      "originPrice": 400000,
+      "salePrice": 350000,
+      "description": "Một hợp chất có trong rượu vang được gọi là revestrato1 có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
+      "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
+      "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
+      "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
+      "quantity": 10,
+      "type": "sale"
+    },
+    {
+      "id": 2,
+      "name": "RƯỢU VANG ĐÀ NẴNG",
+      "img": "2.jpg",
+      "originPrice": 400000,
+      "description": "Một hợp chất có trong rượu vang được gọi là revestrato2 có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
+      "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
+      "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
+      "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
+      "quantity": 10,
+      "salePrice": 350000,
+      "type": "new"
+    },
+    {
+      "id": 3,
+      "name": "RƯỢU VANG HÀ NỘI",
+      "img": "3.jpg",
+      "originPrice": 400000,
+      "description": "Một hợp chất có trong rượu vang được gọi là revestrato3 có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
+      "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
+      "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
+      "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
+      "quantity": 10,
+      "salePrice": 350000,
+      "type": "hot"
+    },
+    {
+      "id": 4,
+      "name": "RƯỢU VANG SÀI GÒN",
+      "img": "4.jpg",
+      "originPrice": 400000,
+      "description": "Một hợp chất có trong rượu vang được gọi là revestrato4 có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
+      "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
+      "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
+      "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
+      "quantity": 10,
+      "salePrice": 350000,
+      "type": "none"
+    },
+    {
+      "id": 5,
+      "name": "RƯỢU VANG HUẾ",
+      "img": "5.jpg",
+      "originPrice": 400000,
+      "description": "Một hợp chất có trong rượu vang được gọi là revestrato có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
+      "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
+      "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
+      "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
+      "quantity": 10,
+      "salePrice": 350000,
+      "type": "none"
+    },
+    {
+      "id": 6,
+      "name": "RƯỢU VANG ĐÀ NẴNG",
+      "img": "6.jpg",
+      "originPrice": 400000,
+      "description": "Một hợp chất có trong rượu vang được gọi là revestrato có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
+      "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
+      "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
+      "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
+      "quantity": 10,
+      "salePrice": 350000,
+      "type": "none"
+    },
+    {
+      "id": 7,
+      "name": "RƯỢU VANG HÀ NỘI",
+      "img": "7.jpg",
+      "originPrice": 400000,
+      "description": "Một hợp chất có trong rượu vang được gọi là revestrato có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
+      "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
+      "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
+      "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
+      "quantity": 10,
+      "salePrice": 350000,
+      "type": "none"
+    },
+    {
+      "id": 8,
+      "name": "RƯỢU VANG SÀI GÒN",
+      "img": "8.jpg",
+      "originPrice": 400000,
+      "description": "Một hợp chất có trong rượu vang được gọi là revestrato có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
+      "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
+      "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
+      "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
+      "quantity": 10,
+      "salePrice": 350000,
+      "type": "none"
+    },
+    {
+      "id": 9,
+      "name": "RƯỢU VANG HUẾ",
+      "img": "9.jpg",
+      "originPrice": 400000,
+      "description": "Một hợp chất có trong rượu vang được gọi là revestrato có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
+      "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
+      "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
+      "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
+      "quantity": 10,
+      "salePrice": 350000,
+      "type": "none"
+    },
+    {
+      "id": 10,
+      "name": "RƯỢU VANG ĐÀ NẴNG",
+      "img": "10.jpg",
+      "originPrice": 400000,
+      "description": "Một hợp chất có trong rượu vang được gọi là revestrato có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
+      "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
+      "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
+      "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
+      "quantity": 10,
+      "salePrice": 350000,
+      "type": "none"
+    },
+    {
+      "id": 11,
+      "name": "RƯỢU VANG HÀ NỘI",
+      "img": "11.jpg",
+      "originPrice": 400000,
+      "description": "Một hợp chất có trong rượu vang được gọi là revestrato có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
+      "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
+      "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
+      "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
+      "quantity": 10,
+      "salePrice": 350000,
+      "type": "none"
+    },
+    {
+      "id": 12,
+      "name": "RƯỢU VANG SÀI GÒN",
+      "img": "12.jpg",
+      "originPrice": 400000,
+      "description": "Một hợp chất có trong rượu vang được gọi là revestrato có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
+      "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
+      "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
+      "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
+      "quantity": 10,
+      "salePrice": 350000,
+      "type": "none"
+    }
+  ],
+  "mainAddress": {
+    "firstName": "Trường",
+    "lastName": "Nguyễn Đình",
+    "company": "Sun* Inc",
+    "address": "898 Trần Cao Vân",
+    "city": "Đà Nẵng",
+    "nation": "Việt Nam",
+    "zipCode": "OE42-FRONTEND",
+    "phone": "0378564777",
+    "isDefault": true
+  },
+  "subAddresses": [
+    {
+      "id": "1",
+      "firstName": "Nguyễn",
+      "lastName": "Hà",
+      "company": "Sun* Inc",
+      "address": "k120/09 Nguyễn Lương Bằng",
+      "city": "Đà Nẵng",
+      "nation": "Trung Quốc",
+      "zipCode": "OE42-FRONTEND",
+      "phone": "01237512122",
+      "isDefault": false
+    },
+    {
+      "id": "2",
+      "firstName": "Trần",
+      "lastName": "Hà",
+      "company": "Acexis inc",
+      "address": "k120/09 Nguyễn Lương Bằng",
+      "city": "Hà Nội",
+      "nation": "Nhật Bản",
+      "zipCode": "OE43-FRONTEND",
+      "phone": "0123576221",
+      "isDefault": false
+    },
+    {
+      "firstName": "Trường2",
+      "lastName": "Đình2",
+      "company": "Sun* Inc2",
+      "address": "898 Trần Cao Vân2",
+      "city": "Nha Trang",
+      "nation": "Việt Nam",
+      "zipCode": "OE42-FRONTEND2",
+      "phone": "3785647772",
+      "isDefault": false,
+      "id": "3"
+    }
+  ],
+  "orders": [
+    {
+      "delivery": "standard",
+      "payment": "local",
+      "products": [
         {
-            "id": 1,
-            "name": "RƯỢU VANG HUẾ",
-            "img": "1.jpg",
-            "originPrice": 400000,
-            "salePrice": 350000,
-            "description": "Một hợp chất có trong rượu vang được gọi là revestrato1 có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
-            "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
-            "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
-            "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
-            "quantity": 10,
-            "type": "sale"
+          "id": "1",
+          "imgLink": "./../assets/products/1.jpg",
+          "name": "RƯỢU VANG HUẾ",
+          "price": 350000,
+          "color": "orange",
+          "size": "large",
+          "quantity": 2,
+          "inventoryQty": 10
         },
         {
-            "id": 2,
-            "name": "RƯỢU VANG ĐÀ NẴNG",
-            "img": "2.jpg",
-            "originPrice": 400000,
-            "description": "Một hợp chất có trong rượu vang được gọi là revestrato2 có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
-            "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
-            "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
-            "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
-            "quantity": 10,
-            "salePrice": 350000,
-            "type": "new"
-        },
-        {
-            "id": 3,
-            "name": "RƯỢU VANG HÀ NỘI",
-            "img": "3.jpg",
-            "originPrice": 400000,
-            "description": "Một hợp chất có trong rượu vang được gọi là revestrato3 có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
-            "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
-            "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
-            "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
-            "quantity": 10,
-            "salePrice": 350000,
-            "type": "hot"
-        },
-        {
-            "id": 4,
-            "name": "RƯỢU VANG SÀI GÒN",
-            "img": "4.jpg",
-            "originPrice": 400000,
-            "description": "Một hợp chất có trong rượu vang được gọi là revestrato4 có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
-            "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
-            "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
-            "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
-            "quantity": 10,
-            "salePrice": 350000,
-            "type": "none"
-        },
-        {
-            "id": 5,
-            "name": "RƯỢU VANG HUẾ",
-            "img": "5.jpg",
-            "originPrice": 400000,
-            "description": "Một hợp chất có trong rượu vang được gọi là revestrato có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
-            "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
-            "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
-            "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
-            "quantity": 10,
-            "salePrice": 350000,
-            "type": "none"
-        },
-        {
-            "id": 6,
-            "name": "RƯỢU VANG ĐÀ NẴNG",
-            "img": "6.jpg",
-            "originPrice": 400000,
-            "description": "Một hợp chất có trong rượu vang được gọi là revestrato có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
-            "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
-            "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
-            "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
-            "quantity": 10,
-            "salePrice": 350000,
-            "type": "none"
-        },
-        {
-            "id": 7,
-            "name": "RƯỢU VANG HÀ NỘI",
-            "img": "7.jpg",
-            "originPrice": 400000,
-            "description": "Một hợp chất có trong rượu vang được gọi là revestrato có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
-            "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
-            "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
-            "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
-            "quantity": 10,
-            "salePrice": 350000,
-            "type": "none"
-        },
-        {
-            "id": 8,
-            "name": "RƯỢU VANG SÀI GÒN",
-            "img": "8.jpg",
-            "originPrice": 400000,
-            "description": "Một hợp chất có trong rượu vang được gọi là revestrato có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
-            "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
-            "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
-            "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
-            "quantity": 10,
-            "salePrice": 350000,
-            "type": "none"
-        },
-        {
-            "id": 9,
-            "name": "RƯỢU VANG HUẾ",
-            "img": "9.jpg",
-            "originPrice": 400000,
-            "description": "Một hợp chất có trong rượu vang được gọi là revestrato có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
-            "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
-            "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
-            "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
-            "quantity": 10,
-            "salePrice": 350000,
-            "type": "none"
-        },
-        {
-            "id": 10,
-            "name": "RƯỢU VANG ĐÀ NẴNG",
-            "img": "10.jpg",
-            "originPrice": 400000,
-            "description": "Một hợp chất có trong rượu vang được gọi là revestrato có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
-            "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
-            "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
-            "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
-            "quantity": 10,
-            "salePrice": 350000,
-            "type": "none"
-        },
-        {
-            "id": 11,
-            "name": "RƯỢU VANG HÀ NỘI",
-            "img": "11.jpg",
-            "originPrice": 400000,
-            "description": "Một hợp chất có trong rượu vang được gọi là revestrato có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
-            "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
-            "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
-            "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
-            "quantity": 10,
-            "salePrice": 350000,
-            "type": "none"
-        },
-        {
-            "id": 12,
-            "name": "RƯỢU VANG SÀI GÒN",
-            "img": "12.jpg",
-            "originPrice": 400000,
-            "description": "Một hợp chất có trong rượu vang được gọi là revestrato có khả năng làm tăng tối đa tuổi thọ. Revestrato có khả năng ngăn chặn mật độ oxy hóa của protein béo.",
-            "outstandingFeature": "Rượu vang được biết đến là loại đồ uống có cồn tốt nhất được khuyên dùng. Trên thế giới có rất nhiều quốc gia sản xuất rượu vang nổi tiếng như: Pháp, Ý, Mỹ, Chile, Tây Ban Nha…Đồng thời có rất rất nhiều các loại rượu vang khác nhau. Vậy điểm nổi bật của các loại rượu vang là gì? Làm sao để sử dụng rượu vang một cách đúng điệu? Ngay bây giờ, Sành Vang mời bạn cùng theo dõi bài viết dưới đây để có câu trả lời phù hợp nhất cho mình nhé.",
-            "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
-            "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
-            "quantity": 10,
-            "salePrice": 350000,
-            "type": "none"
+          "id": "4",
+          "imgLink": "./../assets/products/4.jpg",
+          "name": "RƯỢU VANG SÀI GÒN",
+          "price": 350000,
+          "color": "orange",
+          "size": "large",
+          "quantity": 3,
+          "inventoryQty": 10
         }
-    ]
+      ],
+      "id": 1
+    },
+    {
+      "delivery": "in_day",
+      "payment": "cash",
+      "products": [
+        {
+          "id": "1",
+          "imgLink": "./../assets/products/1.jpg",
+          "name": "RƯỢU VANG HUẾ",
+          "price": 350000,
+          "color": "orange",
+          "size": "large",
+          "quantity": 2,
+          "inventoryQty": 10
+        },
+        {
+          "id": "4",
+          "imgLink": "./../assets/products/4.jpg",
+          "name": "RƯỢU VANG SÀI GÒN",
+          "price": 350000,
+          "color": "orange",
+          "size": "large",
+          "quantity": 4,
+          "inventoryQty": 10
+        }
+      ],
+      "id": 2
+    },
+    {
+      "delivery": "in_day",
+      "payment": "international",
+      "products": [
+        {
+          "id": "3",
+          "imgLink": "./../assets/products/3.jpg",
+          "name": "RƯỢU VANG HÀ NỘI",
+          "price": 350000,
+          "color": "orange",
+          "size": "large",
+          "quantity": 3,
+          "inventoryQty": 10
+        },
+        {
+          "id": "2",
+          "imgLink": "./../assets/products/2.jpg",
+          "name": "RƯỢU VANG ĐÀ NẴNG",
+          "price": 350000,
+          "color": "orange",
+          "size": "large",
+          "quantity": 2,
+          "inventoryQty": 10
+        }
+      ],
+      "id": 3
+    }
+  ]
 }

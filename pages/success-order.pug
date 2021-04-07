@@ -1,0 +1,34 @@
+extend layouts/layout
+
+block title
+    title Đặt hàng thành công
+
+block style
+    link(rel="stylesheet" href="./css/style.css")
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+        crossorigin="anonymous"
+    )
+    link(rel='preconnect' href='https://fonts.gstatic.com')
+    link(href='https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap' rel='stylesheet')
+
+block content
+    include partials/header
+    main#success-order.px-2.p-md-0
+        .congratulation Chúc mừng bạn đã đặt hàng thành công
+        .common Đơn hàng của bạn gồm:
+        .products
+            .common 2 X RƯỢU VANG ĐÀ NẴNG
+            .common 2 X RƯỢU VANG ĐÀ NẴNG
+            .common 2 X RƯỢU VANG ĐÀ NẴNG
+        .common sẽ được giao trong thời gian sớm nhất.
+        .common Cảm ơn bạn đã mua hàng của chúng tôi!
+        a(href="/") Tiếp tục mua sắm 
+    include partials/footer
+
+block module
+    script(type="module" src="./js/mixin.js")
+    script(type="module" src="./js/success-order.js")

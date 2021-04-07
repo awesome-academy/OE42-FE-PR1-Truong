@@ -6,36 +6,57 @@ block title
 block content
     include partials/header
     main#address.px-2.p-md-0
+        +progress(progressStatuses)
         +breadcrumb(["Trang chủ", "Địa chỉ"])
         +titleWithArrow("ĐỊA CHỈ")
         .address-container.container-fluid
+            .select-address-container
+                .address-item#main-address-item
+                    .address-bound
+                        .full-name
+                        .address-info.address Địa chỉ:
+                        .address-info.phone Điện thoại:
+                        .address-info.zip-code Zip code:
+                        button.primary.address-btn(data-id="0") Giao đến địa chỉ này
             .row 
                 .col-12.col-lg-6
-                    form
+                    form#main-address-form(method="post")
                         .address-title ĐỊA CHỈ CỦA BẠN
                         for item in addressData
-                            +formInput(item.name, item.type, item.value, 3)
+                            +formInput(item.name, item.type, item.key, item.value, 3)
                         .row 
                             .button-group.col-12.offset-md-3.col-md-9
                                 button(type="submit") Chỉnh sửa địa chỉ
                                 button(type="reset") Xóa
-                    hr
-                    for addr, ind in addresses 
-                        for item in addr
-                            .text-item.row 
-                                .col-4= item.key
-                                .col-8= item.value
-                        .edit-address-link.col-12
-                            a(href="") Chỉnh sửa địa chỉ
-                        if ind !== addresses.length - 1
+                    .sub-address-container
+                        for addr, ind in addresses 
                             hr
+                            .address-item
+                                for item in addr
+                                    .text-item.row 
+                                        .col-4= item.key
+                                        .col-8= item.value
+                                .edit-address-link.col-12
+                                    a(href="") Chỉnh sửa địa chỉ
                 hr.my-3.d-block.d-lg-none
-                form.col-12.col-lg-6
+                form#add-form.col-12.col-lg-6
                     a(href="").address-header Thêm địa chỉ
                     for item in addressDataAdd
-                        +formInput(item.name, item.type, item.value, 3)
+                        +formInput(item.name, item.type, item.key, item.value, 3)
                     .row 
                         .button-group.col-12.offset-md-3.col-md-9
-                            button(type="submit") Cập nhật địa chỉ
-                            button(type="button") Thoát
+                            button(type="submit") Thêm địa chỉ
+                            button(type="reset") Thoát
     include partials/footer
+
+    .toast-container.position-fixed.top-0.end-0.p-3
+
+    .spinner
+        .spinner-border.text-warning(role='status')
+        span.visually-hidden Loading...
+
+block module 
+    script(type="module" src="./js/vars.js")
+    script(type="module" src="./js/mixin.js")
+    script(type="module" src="./js/apis.js")
+    script(type="module" src="./js/address.js")

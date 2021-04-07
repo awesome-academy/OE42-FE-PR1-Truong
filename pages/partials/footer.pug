@@ -3,7 +3,7 @@ footer
         .modal-dialog.modal-dialog-centered.modal-lg(role='document')
             .modal-content
                 .modal-header
-                    button.close(type='button' data-dismiss='modal' aria-label='Close')
+                    button.close(type='button' data-bs-dismiss='modal' aria-label='Close')
                         i.fa.fa-times
                 .modal-body
                     .modal-container 
@@ -42,7 +42,7 @@ footer
                         .description Gửi email cho chúng tôi để được hỗ trợ
                         form.input
                             input(type="text" name="email" placeholder="Enter your email")
-                            button.button(type="button" data-toggle="modal" data-target="#exampleModal") GỬI
+                            button.button(type="button" data-bs-toggle="modal" data-bs-target="#exampleModal") GỬI
                         .icons 
                             for icon in footerIcons 
                                 i.fa(class=`fa-${icon.icon}`)

@@ -14,16 +14,16 @@ block content
                 +buttonText("ĐĂNG NHẬP")
         form.login-form-container.container-fluid.my-5
             .login-form-title THÔNG TIN CÁ NHÂN
-            +formInput("Tên trước", "text")
-            +formInput("Tên sau", "text")
-            +formInput("Email", "text")
+            +formInput("Tên trước", "text", "firstName")
+            +formInput("Tên sau", "text", "lastName")
+            +formInput("Email", "text", "email")
             .row 
                 .col-12.offset-md-2.col-md-10
                     input(type="checkbox" id="get-news")
                     label(for="get-news") Đăng ký nhận bản tin
             .login-form-title THÔNG TIN ĐĂNG NHẬP
-            +formInput("Mật khẩu", "password")
-            +formInput("Xác nhận mật khẩu", "password")
+            +formInput("Mật khẩu", "password", "password")
+            +formInput("Xác nhận mật khẩu", "password", "confirm-password")
             .row 
                 .login-button.col-12.offset-md-2.col-md-10
                     button(type="submit").smallButtonText GỬI
