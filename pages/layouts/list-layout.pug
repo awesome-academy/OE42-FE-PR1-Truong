@@ -11,15 +11,9 @@ block content
             .row 
                 .left.col-12.col-md-3
                     +titleWithArrow("DANH MỤC SẢN PHẨM")
-                    ul
-                        for wineGroup in redWineData
-                            li.wine-group= wineGroup.title
-                            ul
-                            for wine in wineGroup.data 
-                                li.wine-name
-                                    if wine.active
-                                        i.fa.fa-circle
-                                    a(href="/list.html" class={active : wine.active})= wine.name + " (" + wine.qty + ")" 
+                    .all
+                        a(href="") Chọn tất cả
+                    ul.category-container
                     +titleWithArrow("SO SÁNH SẢN PHẨM")
                     .compare Bạn chưa có sản phẩm nào để so sánh
                     +titleWithArrow("TAG SẢN PHẨM")

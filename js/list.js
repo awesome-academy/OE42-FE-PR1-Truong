@@ -1,4 +1,4 @@
-import { getPaginateProducts } from "./apis.js";
+import { getPaginateProducts, getWineCategories } from "./apis.js";
 import {
   customTryCatch,
   formatCurrency,
@@ -7,6 +7,7 @@ import {
 } from "./mixin.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
+  const typeId = getParamFromUrl("type_id");
   const currentPage = getParamFromUrl("page") || 1;
   let productsPromise = null;
   let totalPage = null;
@@ -46,8 +47,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     limit = 9;
     displayType = "table";
     mapFunc = (product) => {
-        const { id, img, name, originPrice, salePrice } = product;
-        return `
+      const { id, img, name, originPrice, salePrice } = product;
+      return `
             <div class="item">
                 <div class="champagne-card">
                     <div class="img-container">
@@ -71,12 +72,12 @@ document.addEventListener("DOMContentLoaded", async () => {
                     <a class="name" href="/detail.html?id=${id}">${name}</a>
                     <div class="price">
                         <span class="originPrice">
-                            <span>${originPrice}</span>
+                            <span>${formatCurrency(originPrice)}</span>
                             <sup>đ</sup>
                         </span>
                         <span>&nbsp;-&nbsp;</span>
                         <span class="salePrice">
-                            <span>${salePrice}</span>
+                            <span>${formatCurrency(salePrice)}</span>
                             <sup>đ</sup>
                         </span>
                     </div>
@@ -84,22 +85,32 @@ document.addEventListener("DOMContentLoaded", async () => {
                 </div>
             </div>
         `;
-      };
+    };
   }
 
   await customTryCatch(async () => {
-    productsPromise = getPaginateProducts(currentPage, limit);
+    productsPromise = getPaginateProducts(currentPage, limit, typeId);
     totalPage = Math.ceil(
       (await productsPromise).headers.get("X-Total-Count") / limit
     );
     products = await productsPromise.then((res) => res.json());
   });
 
-  document.querySelector(".list").innerHTML = products.map(product => mapFunc(product)).join("");
-  setPagination(
+  document.querySelector(".list").innerHTML = products.length
+    ? products.map((product) => mapFunc(product)).join("")
+    : `
+      <div class="empty">
+        <i class="fa fa-folder-open"></i>
+        <span>Không tìm thấy sản phẩm</span>
+      </div>
+    `;
+  products.length && setPagination(
     currentPage,
     totalPage,
-    (page) => `/list-${displayType}.html?page=${page}`
+    (page) =>
+      `/list-${displayType}.html?page=${page}${
+        typeId ? "&type_id=" + typeId : ""
+      }`
   );
 
   // Set next, prev event
@@ -109,7 +120,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (currentPage > 1) {
         location.href = `http://localhost:3000/list-${displayType}.html?page=${
           +currentPage - 1
-        }`;
+        }${typeId ? "&type_id=" + typeId : ""}`;
       }
     });
   document
@@ -118,7 +129,68 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (currentPage < totalPage) {
         location.href = `http://localhost:3000/list-${displayType}.html?page=${
           +currentPage + 1
-        }`;
+        }${typeId ? "&type_id=" + typeId : ""}`;
       }
     });
+
+  // Wine categories
+  customTryCatch(async () => {
+    const categories = await getWineCategories();
+    const categoryGroup = {};
+    categories.forEach((category) => {
+      const { id, name, type } = category;
+      if (!categoryGroup.hasOwnProperty(type)) {
+        categoryGroup[type] = [{ id, name }];
+      } else {
+        categoryGroup[type] = [...categoryGroup[type], { id, name }];
+      }
+    });
+    document.querySelector(".category-container").innerHTML = Object.keys(
+      categoryGroup
+    )
+      .map((key) => {
+        return `
+        <li class="wine-group">${key}
+          <ul>
+            ${categoryGroup[key]
+              .map(
+                (category) => `
+                <li class="wine-name">
+                  ${
+                    category.id === +typeId
+                      ? "<i class='fa fa-circle'></i>"
+                      : ""
+                  }
+                  <a class="${
+                    category.id === +typeId ? "active" : ""
+                  }" href="/list-${displayType}.html?type_id=${category.id}">${
+                  category.name
+                }</a>
+                </li>
+                `
+              )
+              .join("")}
+          </ul>
+        </li>
+      `;
+      })
+      .join("");
+  });
+
+  // Set display type href
+  document
+    .querySelector('label[for="table-type"] > a')
+    .setAttribute(
+      "href",
+      `/list-table.html${typeId ? "?type_id=" + typeId : ""}`
+    );
+  document
+    .querySelector('label[for="list-type"] > a')
+    .setAttribute(
+      "href",
+      `/list-list.html${typeId ? "?type_id=" + typeId : ""}`
+    );
+  document
+    .querySelector(".all > a")
+    .setAttribute("href", `/list-${displayType}.html`);
 });
