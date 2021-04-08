@@ -8,8 +8,16 @@ export const getAllProducts = async () =>
 export const getProduct = async (id) =>
   customFetch(url.GET_PRODUCT_API + id, "get");
 
-export const getPaginateProducts = async (page, limit) =>
-  fetch(`${url.GET_ALL_PRODUCTS_API}?_page=${page}&_limit=${limit}`);
+export const getPaginateProducts = async (page, limit, typeId) =>
+  fetch(
+    `${url.GET_ALL_PRODUCTS_API}?_page=${page}&_limit=${limit}${
+      typeId && "&wineCategoryId=" + typeId
+    }`
+  );
+
+// Wine category
+export const getWineCategories = async () =>
+  customFetch(url.WINE_CATEGORY_URL, "get");
 
 // Address
 export const getMainAddress = async () =>

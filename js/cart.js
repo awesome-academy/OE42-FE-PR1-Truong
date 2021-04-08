@@ -2,7 +2,7 @@ import { formatCurrency, setConfirmTooltip } from "./mixin.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
   const orders = JSON.parse(localStorage.getItem("orders"));
-  if (orders) {
+  if (orders && orders.length) {
     document.querySelector("tbody").innerHTML = await orders
       .map(
         (order) => `
@@ -101,5 +101,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         "Đã xóa đơn hàng ra khỏi giỏ hàng!"
       );
     });
+  } else {
+    document.querySelector(".table-responsive").style.display = "none";
+    document.querySelector("#choose-address-btn").style.display = "none";
+    document.querySelector(".empty").style.display = "block";
   }
 });

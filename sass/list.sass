@@ -14,17 +14,20 @@ main#list
         .wine-group
             color: grey
             margin-top: 0.5rem
-        .wine-name
-            display: flex
-            color: grey
-            .fa
-                line-height: 1.4rem
-                font-size: 0.5rem
-                margin-right: 0.5rem
-                color: orange
+            .wine-name
+                display: flex
+                color: grey
+                .fa
+                    line-height: 1.1rem
+                    font-size: 0.5rem
+                    margin-right: 0.5rem
+                    color: orange
+                @include link-style(grey, orange)
+                a[class~="active"]
+                    color: orange
+        .all
             @include link-style(grey, orange)
-            a[class~="active"]
-                color: orange
+            margin-bottom: 0.5rem
         .compare
             color: grey
         .img
@@ -64,9 +67,16 @@ main#list
                 .pagi-page-container
                     display: inline
         .list
-            flex: 1 1 auto
             display: flex
             flex-wrap: wrap
+            .empty
+                text-align: center
+                color: red
+                margin-top: 10rem
+                font-size: 1.5rem
+                width: 100%
+                i.fa
+                    margin-right: 0.5rem
             .item
                 margin-top: 1rem
                 width: 50%
@@ -75,7 +85,7 @@ main#list
             .list-view-item
                 display: flex
                 align-items: center
-                padding: 1rem 0
+                padding: 2rem 0
                 box-sizing: border-box
                 border-top: 1px solid lightgrey
                 &:first-of-type

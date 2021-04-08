@@ -4,6 +4,9 @@ const BASE_API_URL = "http://localhost:4000";
 export const GET_ALL_PRODUCTS_API = BASE_API_URL + "/products";
 export const GET_PRODUCT_API = BASE_API_URL + "/products/";
 
+// Wine category
+export const WINE_CATEGORY_URL = BASE_API_URL + "/wineCategories";
+
 // Address
 export const MAIN_ADDRESS_URL = BASE_API_URL + "/mainAddress";
 export const SUB_ADDRESS_URL = BASE_API_URL + "/subAddresses";

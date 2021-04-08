@@ -11,7 +11,8 @@
       "infoProduct": "Mỗi loại rượu vang trắng, rượu vang đỏ hay champagne đều có loại ly uống vang phù hợp riêng biệt. Việc có nhiều hình dáng, kiểu ly uống rượu vang khác nhau thật ra đều mang một ngụ ý nhất định từ các nhà sản xuất ly uống vang chuyên nghiệp. Họ không ngừng nghiên cứu, sáng tạo, cải tiến sao cho sản xuất được ly rượu vang làm nổi bật tối đa màu sắc, vẻ đẹp, hương thơm, hay mùi vị của rượu vang khi dùng.",
       "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
       "quantity": 10,
-      "type": "sale"
+      "type": "sale",
+      "wineCategoryId": 1
     },
     {
       "id": 2,
@@ -24,7 +25,8 @@
       "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
       "quantity": 10,
       "salePrice": 350000,
-      "type": "new"
+      "type": "new",
+      "wineCategoryId": 1
     },
     {
       "id": 3,
@@ -37,7 +39,8 @@
       "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
       "quantity": 10,
       "salePrice": 350000,
-      "type": "hot"
+      "type": "hot",
+      "wineCategoryId": 1
     },
     {
       "id": 4,
@@ -50,7 +53,8 @@
       "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
       "quantity": 10,
       "salePrice": 350000,
-      "type": "none"
+      "type": "none",
+      "wineCategoryId": 1
     },
     {
       "id": 5,
@@ -63,7 +67,8 @@
       "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
       "quantity": 10,
       "salePrice": 350000,
-      "type": "none"
+      "type": "none",
+      "wineCategoryId": 1
     },
     {
       "id": 6,
@@ -76,7 +81,8 @@
       "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
       "quantity": 10,
       "salePrice": 350000,
-      "type": "none"
+      "type": "none",
+      "wineCategoryId": 1
     },
     {
       "id": 7,
@@ -89,7 +95,8 @@
       "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
       "quantity": 10,
       "salePrice": 350000,
-      "type": "none"
+      "type": "none",
+      "wineCategoryId": 1
     },
     {
       "id": 8,
@@ -102,7 +109,8 @@
       "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
       "quantity": 10,
       "salePrice": 350000,
-      "type": "none"
+      "type": "none",
+      "wineCategoryId": 1
     },
     {
       "id": 9,
@@ -115,7 +123,8 @@
       "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
       "quantity": 10,
       "salePrice": 350000,
-      "type": "none"
+      "type": "none",
+      "wineCategoryId": 1
     },
     {
       "id": 10,
@@ -128,7 +137,8 @@
       "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
       "quantity": 10,
       "salePrice": 350000,
-      "type": "none"
+      "type": "none",
+      "wineCategoryId": 1
     },
     {
       "id": 11,
@@ -141,7 +151,8 @@
       "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
       "quantity": 10,
       "salePrice": 350000,
-      "type": "none"
+      "type": "none",
+      "wineCategoryId": 2
     },
     {
       "id": 12,
@@ -154,8 +165,26 @@
       "review": "Có nhiều người nhầm lẫn rằng rượu vang được bảo quản tốt hơn khi cho chai nằm thẳng đứng. Tuy nhiên các chuyên gia về rượu đã nhận định rằng, cách bảo quản rượu vang tốt nhất chính là đặt chai rượu nằm ngang. Vì khi cho rượu tiếp xúc với phần nắp chai sẽ giúp phần nút gỗ luôn có độ ẩm. Nút chai không bị khô, không bị co lại thì không khí bên ngoài sẽ không vào được phía bên trong chai. Từ đó chất lượng của rượu cũng được giữ nguyên.",
       "quantity": 10,
       "salePrice": 350000,
-      "type": "none"
+      "type": "none",
+      "wineCategoryId": 2
     }
+  ],
+  "wineCategories": [
+    { "id": 1, "name": "Rượu Chivas", "type": "RƯỢU NGOẠI" },
+    { "id": 2, "name": "Johnnie Walker", "type": "RƯỢU NGOẠI" },
+    { "id": 3, "name": "Rượu Whiskey", "type": "RƯỢU NGOẠI" },
+    { "id": 4, "name": "Rượu Remy Martin", "type": "RƯỢU NGOẠI" },
+    { "id": 5, "name": "Rượu Glenmorangie", "type": "RƯỢU NGOẠI" },
+    { "id": 6, "name": "Rượu Chivas", "type": "RƯỢU VANG" },
+    { "id": 7, "name": "Johnnie Walker", "type": "RƯỢU VANG" },
+    { "id": 8, "name": "Rượu Whiskey", "type": "RƯỢU VANG" },
+    { "id": 9, "name": "Rượu Remy Martin", "type": "RƯỢU VANG" },
+    { "id": 10, "name": "Rượu Glenmorangie", "type": "RƯỢU VANG" },
+    { "id": 11, "name": "Rượu Chivas", "type": "RƯỢU TRẮNG" },
+    { "id": 12, "name": "Johnnie Walker", "type": "RƯỢU TRẮNG" },
+    { "id": 13, "name": "Rượu Whiskey", "type": "RƯỢU TRẮNG" },
+    { "id": 14, "name": "Rượu Remy Martin", "type": "RƯỢU TRẮNG" },
+    { "id": 15, "name": "Rượu Glenmorangie", "type": "RƯỢU TRẮNG" }
   ],
   "mainAddress": {
     "firstName": "Trường",
