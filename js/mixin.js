@@ -106,7 +106,8 @@ export const customTryCatch = async (func) => {
   try {
     turnSpinner("on");
     await func();
-  } catch {
+  } catch(err) {
+    console.log(err);
     showToast("Đã xảy ra lỗi!", "fail");
   } finally {
     turnSpinner("off");
@@ -115,3 +116,43 @@ export const customTryCatch = async (func) => {
 
 export const getParamFromUrl = (param) =>
   new URL(location.href).searchParams.get(param);
+
+export const setPagination = (current, total, getHref) => {
+  const pages = [];
+  if (total > 5) {
+    pages.push(1);
+    pages.push(2);
+    if (current >= 5) {
+      pages.push("...");
+    }
+    if (current >= 4 && current !== total) {
+      pages.push(current - 1);
+    }
+    if (current >= 3 && current <= total - 2) {
+      pages.push(current);
+    }
+    if (current <= total - 3 && current >= 2) {
+      pages.push(current + 1);
+    }
+    if (current <= total - 4) {
+      pages.push("...");
+    }
+    pages.push(total - 1);
+    pages.push(total);
+  } else {
+    for (let i = 1; i <= total; i++) {
+      pages.push(i);
+    }
+  }
+
+  document.querySelector(".pagi-page-container").innerHTML = pages
+    .map((page) =>
+      page === "..."
+        ? "<span>...</span>"
+        : `<a href="${getHref(page)}">${page}</a>`
+    )
+    .join("");
+  document
+    .querySelector(`a[href="${getHref(current)}"]`)
+    .classList.add("active");
+};
